@@ -8,14 +8,52 @@ h4,
 h5 {
   margin: 0;
   padding: 0;
+  line-height: unset;
 }
 
 a {
   text-decoration: none;
+  font-size: unset;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Variables  */
 :root {
+  font-size: 16px;
+
   --clr-primary-400: #ec091c;
 
   --clr-accent-400: #00519d;
@@ -116,12 +154,13 @@ body {
   width: 25ch;
 }
 
-.card-link {
-  color: var(--clr-accent-400);
+.card-link a {
+  color: var(--clr-accent-400) !important;
+  font-size: var(--fs-400) !important;
 }
 
 .card-link a:hover {
-  color: var(--clr-primary-400);
+  color: var(--clr-primary-400) !important;
 }
 
 .gradient-bar {

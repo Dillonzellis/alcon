@@ -5,15 +5,18 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6,
+a {
   margin: 0;
   padding: 0;
   line-height: unset;
+  font-weight: unset;
+  font-size: unset;
 }
 
 a {
   text-decoration: none;
-  font-size: unset;
 }
 
 html:focus-within {
@@ -77,6 +80,7 @@ body {
   --fs-400: 1rem;
   --fs-500: 1.5rem;
   --fs-600: 2rem;
+  --fs-650: 2.5rem;
   --fs-700: 3rem;
 }
 
@@ -92,8 +96,47 @@ body {
 }
 
 .content-space {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.space {
+  height: 1000px;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 0.75em 2em;
+  border-radius: 100vmax;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
+
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-text-100);
+}
+
+.btn-secondary {
+  border: 1px solid #fff;
+}
+
+.primary-header {
+  color: var(--clr-text-100);
+  font-family: var(--ff-accent);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-medium);
+}
+
+.secondary-header {
+  color: var(--clr-accent-400);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-medium);
+
+  font-family: var(--ff-accent);
 }
 
 /* Home */
@@ -105,12 +148,8 @@ body {
 
 .solutions-container h2 {
   background-color: var(--clr-primary-400);
-  color: var(--clr-text-100);
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 6rem;
-  font-family: var(--ff-accent);
-  font-size: var(--fs-700);
-  font-weight: var(--fw-medium);
 }
 
 .card-deck {
@@ -180,4 +219,47 @@ body {
 
 .card:hover ~ .gradient-bar {
   display: block;
+}
+
+/* CTA */
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-container > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.cta-container h3 {
+}
+
+.cta-container p {
+  width: 60ch;
+  margin-bottom: 1.5rem;
+}
+
+/* Rates */
+.rates-container {
+  background-color: var(--clr-tertiary-400);
+  color: var(--clr-text-100);
+}
+
+.rates-container h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.rate-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rates-container .btn-wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.rate-link {
 }

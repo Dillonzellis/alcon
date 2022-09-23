@@ -16,19 +16,23 @@
   <div class="home-hero-container">
     <div class="de-container equal-col">
       <div class="left-col">
-        <h1 class="primary-header primary-header-700 mb-600">Banking for Life.</h1>
+        <h1 class="primary-header primary-header-700">Banking for Life.</h1>
         <div class="btn-wrapper">
           <a href="#" class="btn btn-secondary">Open Account</a>
           <a href="#" class="btn btn-secondary">Apply for Loan</a>
+          <!-- <a href="#" class="btn btn-primary">Make Loan Payment</a> -->
+          <a href="#" class="btn btn-primary hide-on-mobile">Make Loan Payment</a>
+        </div>
+        <div class="btn-wrapper hide-on-desktop">
           <a href="#" class="btn btn-primary">Make Loan Payment</a>
         </div>
       </div>
       <div class="right-col">
-        <div class="online-banking-container">
+        <div class="online-banking-container hide-on-mobile">
           <div class="online-banking-header">Online Banking</div>
           <div class="input-wrapper">
             <label for="">Username</label>
-            <input type="text">
+            <input type="text" />
           </div>
           <div class="btn-wrapper">
             <button type="submit">Login to Online Banking</button>
@@ -43,6 +47,23 @@
     </div>
   </div>
 
+  <div class="m-online-banking-wrapper hide-on-desktop">
+    <div class="online-banking-container">
+      <div class="online-banking-header">Online Banking</div>
+      <div class="input-wrapper">
+        <label for="">Username</label>
+        <input type="text" />
+      </div>
+      <div class="btn-wrapper">
+        <button type="submit">Login to Online Banking</button>
+      </div>
+      <div class="flex j-center">
+        <a href="http://" target="_blank" rel="noopener noreferrer">Enroll</a>
+        <span> | </span>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
 
   <div class="solutions-container | t-center">
     <h2 class="primary-header">Solutions for your life goals.</h2>
@@ -58,7 +79,8 @@
                 </div>
                 <div class="card-title">Buy a Car</div>
                 <div class="card-body-text">
-                  Pick a color, pick a payment! We put you in the driver's seat.
+                  Pick a color, pick a payment! We put you in the driver's
+                  seat.
                 </div>
                 <div class="card-link">
                   <a href="#" target="_blank" rel="noopener"><strong>Apply for Auto Loan</strong></a>
@@ -76,8 +98,8 @@
                 </div>
                 <div class="card-title">Buy a Home</div>
                 <div class="card-body-text">
-                  Your home is the backdrop of your memories! Unlock your future
-                  today.
+                  Your home is the backdrop of your memories! Unlock your
+                  future today.
                 </div>
                 <div class="card-link">
                   <a href="#" target="_blank" rel="noopener"><strong>Apply for Home Loan</strong></a>
@@ -95,7 +117,8 @@
                 </div>
                 <div class="card-title">Open a Credit Card</div>
                 <div class="card-body-text">
-                  Rewards? Cash back? Low rates? Yes, we offer all the options.
+                  Rewards? Cash back? Low rates? Yes, we offer all the
+                  options.
                 </div>
                 <div class="card-link">
                   <a href="#" target="_blank" rel="noopener"><strong>Request Credit Card</strong></a>
@@ -113,7 +136,8 @@
                 </div>
                 <div class="card-title">Buy a Car</div>
                 <div class="card-body-text">
-                  Pick a color, pick a payment! We put you in the driver's seat.
+                  Pick a color, pick a payment! We put you in the driver's
+                  seat.
                 </div>
                 <div class="card-link">
                   <a href="#" target="_blank" rel="noopener"><strong>Apply for Auto Loan</strong></a>
@@ -131,7 +155,8 @@
                 </div>
                 <div class="card-title">Buy a Car</div>
                 <div class="card-body-text">
-                  Pick a color, pick a payment! We put you in the driver's seat.
+                  Pick a color, pick a payment! We put you in the driver's
+                  seat.
                 </div>
                 <div class="card-link">
                   <a href="#" target="_blank" rel="noopener"><strong>Apply for Auto Loan</strong></a>
@@ -140,7 +165,6 @@
             </div>
             <div class="gradient-bar"></div>
           </div>
-
         </div>
       </div>
     </div>
@@ -158,8 +182,7 @@
   </div>
 
   <div class="bg-logo-wrapper">
-    <img src="https://dev2.growthbydesign.org/wp-content/uploads/2022/09/1st-CTA-bg-logo.jpg" alt="" srcset="">
-
+    <img src="https://dev2.growthbydesign.org/wp-content/uploads/2022/09/1st-CTA-bg-logo.jpg" alt="" srcset="" />
   </div>
 
   <div class="rates-container | t-center">
@@ -237,16 +260,16 @@
       responsive: [{
           breakpoint: 980,
           settings: {
-            slidesToShow: 2
-          }
+            slidesToShow: 2,
+          },
         },
         {
           breakpoint: 767,
           settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
+            slidesToShow: 1,
+          },
+        },
+      ],
     });
   });
 </script>

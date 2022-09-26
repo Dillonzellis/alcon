@@ -93,13 +93,13 @@ body {
 
 /* Utility */
 
-.wide-container {
+/* .wide-container {
   --max-width: 1200px;
   --padding: 0.25rem;
 
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
-}
+} */
 
 .de-container {
   --max-width: 1400px;
@@ -137,6 +137,10 @@ body {
 
 .j-center {
   justify-content: center;
+}
+
+.a-center {
+  align-items: center;
 }
 
 .mb-400 {
@@ -235,6 +239,19 @@ body {
   font-family: var(--ff-accent);
 }
 
+.tertiary-header {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+}
+
+.tertiary-header-primary {
+  color: var(--clr-text-700);
+}
+
+.tertiary-header-accent {
+  color: var(--clr-text-100);
+}
+
 /* Nav */
 
 .main-nav-wrapper-alcon {
@@ -243,7 +260,7 @@ body {
   background-color: var(--clr-tertiary-600);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 1149px) {
   .main-nav-wrapper-alcon {
     position: absolute !important;
     /* width: 100% !important; */
@@ -269,7 +286,7 @@ body {
   background-color: var(--clr-tertiary-600);
 } */
 
-@media (min-width: 50em) {
+@media (min-width: 1149px) {
   .et_pb_menu_0_tb_header.et_pb_menu {
     background-color: transparent !important;
   }
@@ -312,17 +329,17 @@ body {
   }
 }
 
-@media (min-width: 1300px) {
+/* @media (min-width: 1300px) {
   #menu-main-menu
     > li.et_pb_menu_page_id-800146.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-800146 {
     margin-right: 15vw;
   }
-}
+} */
 
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
   #menu-main-menu
     > li.et_pb_menu_page_id-800146.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-800146 {
-    margin-right: 23vw;
+    margin-right: 15vw;
   }
 }
 
@@ -330,6 +347,18 @@ body {
   #et-boc > header > div > div {
     padding: 0.5rem;
     background-color: var(--clr-tertiary-600);
+  }
+}
+
+/* @media (min-width: 1600px) {
+  .et_pb_menu__logo {
+    margin-right: 10vw;
+  }
+} */
+
+@media (min-width: 1350px) {
+  .et_pb_menu__logo {
+    margin-right: 10vw !important;
   }
 }
 
@@ -345,6 +374,20 @@ body {
   .et_pb_menu .et_mobile_menu {
     top: 110% !important;
   }
+}
+
+/*adjust Divi Menu module breakpoint*/
+@media only screen and (max-width: 1149px) {
+  .et_pb_menu .et_pb_menu__menu {
+    display: none;
+  }
+  .et_mobile_nav_menu {
+    display: block;
+  }
+}
+
+.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before {
+  color: var(--clr-accent-400) !important;
 }
 
 /* Home */
@@ -616,24 +659,83 @@ body {
 
 /* Inner Pages */
 
-/* Bank */
-
-/* Checking */
-
-.checking-hero-container {
-  background-image: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/09/checking-hero.jpg");
-  background-size: cover;
-  height: 730px;
-
+.inner-hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
 }
 
-.checking-hero-container p {
+@media (min-width: 60em) {
+  .inner-hero-container {
+    height: 730px;
+  }
+}
+
+.inner-hero-text-wrapper {
   color: var(--clr-text-100);
 }
+
+/* .inner-hero-text-wrapper p {
+  font-size: var(--fs-500);
+} */
+
+.inner-content-wrapper {
+  flex-direction: column;
+}
+
+@media (min-width: 60em) {
+  .inner-content-wrapper {
+    --gap: 0;
+    flex-direction: row;
+  }
+}
+
+.accent-wrapper {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 60em) {
+  .accent-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* .inner-content-container {
+  --gap: 0;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 60em) {
+  .inner-content-container {
+    display: unset;
+  }
+} */
+
+.inner-content-accent {
+  background-color: var(--clr-accent-400);
+  color: var(--clr-text-100);
+}
+
+.inner-content-container p {
+  margin-bottom: 1.5rem;
+}
+
+.inner-content-container ul {
+  font-weight: var(--fw-bold);
+  padding-inline-start: 3.5em !important;
+}
+/* .inner-content-container ul > li::before {
+  margin-left: 2em;
+} */
+
+.inner-content-container .btn {
+  margin-top: 1.5rem;
+}
+
+/* Bank */
 
 /* Footer */
 

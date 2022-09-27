@@ -188,6 +188,8 @@ body {
   color: var(--clr-text-100);
   border: none;
 
+  text-transform: capitalize;
+
   cursor: pointer;
   max-width: fit-content;
 }
@@ -756,6 +758,11 @@ body {
 }
 
 /* Bank */
+
+/* About */
+.about-hero {
+  background-color: steelblue;
+}
 
 /* Footer */
 

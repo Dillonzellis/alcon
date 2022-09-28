@@ -677,13 +677,20 @@ body {
   padding-bottom: 2.5rem;
 }
 
-.rate-wrapper .apply-wrapper {}
+.rate-wrapper .apply-wrapper {
+  --gap:0.5rem;
+}
 
 .rate-wrapper .apply-wrapper>a {
   color: var(--clr-text-100);
 }
 
 .rate-link {}
+
+.right-ar svg{
+  color: var(--clr-text-100);
+
+}
 
 /* Inner Pages */
 

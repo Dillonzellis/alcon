@@ -267,19 +267,98 @@ body {
 
 /* Nav */
 
-.main-nav-wrapper-alcon {
+.alcon-main-menu-desktop{
+  display: none;
+}
+
+@media(min-width:1120px){
+  .alcon-main-menu-desktop{
+    display: block
+  }
+}
+
+.alcon-main-menu-mobile{
+padding: 0 !important;
+}
+
+@media(min-width:1120px){
+  .alcon-main-menu-mobile{
+    display: none
+  }
+}
+
+
+.alcon-row {
+  --gap: 0;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 1rem !important;
+}
+
+.alcon-col {
+  width: unset !important;
+}
+
+/* Mobile Nav */
+.alcon-row-mobile{
+  padding: 0!important;
+  margin: 0 !important;
+
+  background-color: var(--clr-tertiary-600) !important;
+
+  /* display: grid;
+  grid-template-columns: 2fr 1fr; */
+}
+
+.alcon-col-mobile{
+  padding: 0!important;
+  margin: 0 !important;
+
+  background-color: var(--clr-tertiary-600);
+}
+
+.mega-menu-toggle{
+  background-color: var(--clr-tertiary-600) !important;
+}
+
+/* Mobile submenu bg */
+#mega-menu-max_mega_menu_2{
+  background-color: var(--clr-tertiary-600) !important;
+}
+
+
+/* Mega Menu Nav */
+a.mega-menu-link {
+  margin-right: 0.5rem !important;
+  text-transform: uppercase !important;
+  font-weight: var(--fw-semi-bold);
+  background-color:var(--clr-tertiary-600) !important;
+}
+
+.mega-indicator:after{
+  content:"" !important;
+}
+
+.nav-logo-mobile > a{
+  background-image: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/09/site-logo.png") !important;
+
+  background-repeat: no-repeat !important;
+  padding: 2.25rem 0rem !important;
+
+  color:var(--clr-tertiary-600) !important;
+}
+
+/* Old Divi Nav */
+/* .main-nav-wrapper-alcon {
   width: 100% !important;
-  /* max-width: 1400px; */
   background-color: var(--clr-tertiary-600);
 }
 
 @media (min-width: 1149px) {
   .main-nav-wrapper-alcon {
     position: absolute !important;
-    /* width: 100% !important; */
     background-color: transparent !important;
-    /* max-width: 1400px;
-    margin-inline: auto; */
   }
 }
 
@@ -294,10 +373,6 @@ body {
   max-width: unset;
   width: 100%;
 }
-
-/* .et_pb_menu_0_tb_header.et_pb_menu {
-  background-color: var(--clr-tertiary-600);
-} */
 
 @media (min-width: 1149px) {
   .et_pb_menu_0_tb_header.et_pb_menu {
@@ -333,13 +408,6 @@ body {
   }
 }
 
-/* @media (min-width: 1300px) {
-  #menu-main-menu
-    > li.et_pb_menu_page_id-800146.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-800146 {
-    margin-right: 15vw;
-  }
-} */
-
 @media (min-width: 1600px) {
   #menu-main-menu>li.et_pb_menu_page_id-800146.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-800146 {
     margin-right: 15vw;
@@ -352,12 +420,6 @@ body {
     background-color: var(--clr-tertiary-600);
   }
 }
-
-/* @media (min-width: 1600px) {
-  .et_pb_menu__logo {
-    margin-right: 10vw;
-  }
-} */
 
 @media (min-width: 1350px) {
   .et_pb_menu__logo {
@@ -379,8 +441,11 @@ body {
   }
 }
 
-/*adjust Divi Menu module breakpoint*/
-@media only screen and (max-width: 1149px) {
+.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before {
+  color: var(--clr-accent-400) !important;
+} */
+
+/* @media only screen and (max-width: 1120px) {
   .et_pb_menu .et_pb_menu__menu {
     display: none;
   }
@@ -388,11 +453,7 @@ body {
   .et_mobile_nav_menu {
     display: block;
   }
-}
-
-.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before {
-  color: var(--clr-accent-400) !important;
-}
+} */
 
 /* Home */
 
@@ -462,8 +523,8 @@ body {
 }
 
 .online-banking-container .id-input {
-  background-color:rgba(38, 38, 38, 0.8);
-  color:var(--clr-text-100);
+  background-color: rgba(38, 38, 38, 0.8);
+  color: var(--clr-text-100);
 
   border: 1px solid var(--clr-text-100);
   padding: 0.45em 1em;
@@ -475,7 +536,7 @@ body {
 }
 
 .online-banking-container .id-input:focus {
-  color:var(--clr-text-100);
+  color: var(--clr-text-100);
   /* border: 1.5px solid var(--clr-text-100); */
 }
 
@@ -678,7 +739,7 @@ body {
 }
 
 .rate-wrapper .apply-wrapper {
-  --gap:0.5rem;
+  --gap: 0.5rem;
 }
 
 .rate-wrapper .apply-wrapper>a {
@@ -687,7 +748,7 @@ body {
 
 .rate-link {}
 
-.right-ar svg{
+.right-ar svg {
   color: var(--clr-text-100);
 
 }

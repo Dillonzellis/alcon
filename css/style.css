@@ -1492,6 +1492,7 @@ ul.slick-dots {
 
   .sub-menu-wrapper {
     padding: 1rem;
+    padding-left: 15vw;
   }
 
   .sub-menu-list li {
@@ -1518,15 +1519,12 @@ ul.slick-dots {
     width: 125px;
   }
 
-
-
   .sub-menu-list-lower {
     color: var(--clr-text-100);
     list-style: none !important;
     padding: 0;
     text-transform: capitalize;
   }
-
 }
 
 @media(min-width:1200px) {
@@ -1631,6 +1629,10 @@ ul.slick-dots {
     position: relative;
   }
 
+  .sub-menu-item:hover{
+    opacity: 0.85;
+  }
+
   .sub-menu-item:after {
     content: "";
     background-color: var(--clr-primary-400);
@@ -1640,6 +1642,10 @@ ul.slick-dots {
     height: 2px;
     width: 45px;
   }
+
+  /* .no-underline .sub-menu-item::after{
+    content:unset;
+  } */
 
   .sub-menu-list-lower {
     display: block;

@@ -5,6 +5,10 @@ const subMenuLists = document.querySelectorAll('.sub-menu-list')
 const arr = [...subMenuLists]
 const active = document.querySelectorAll('.active')
 
+const subMenuWrapper = document.querySelector('.sub-menu-wrapper')
+
+
+
 const bankNav = document.querySelector('.bank')
 const bankSub = document.querySelector('.bank-sub')
 
@@ -42,20 +46,32 @@ hamburger.addEventListener("click", () => {
 
 })
 
-bankNav.addEventListener("click", () => {
+
+// bankNav.addEventListener("mouseout", () => {
+//     console.log('mouse out');
+// })
+
+// mouse hover event need to use foreach/array for all submenuwrappers
+// subMenuWrapper.addEventListener("mouseover", () => {
+//     console.log('mouse hover');
+//     alert('mousrover')
+// })
+
+
+bankNav.addEventListener("mouseover", () => {
     bankSub.classList.toggle("active")
 
     //remove all active classes from sub-menu-list
     subMenuLists.forEach((list) => {
         if (list.classList.contains('bank-sub')) {
-            console.log('hit');
+            // console.log('hit');
         } else {
             list.classList.remove('active')
         }
     })
 })
 
-borrowNav.addEventListener("click", () => {
+borrowNav.addEventListener("mouseover", () => {
     borrowSub.classList.toggle("active")
 
     //remove all active classes from sub-menu-list
@@ -68,7 +84,7 @@ borrowNav.addEventListener("click", () => {
     })
 })
 
-solutionsNav.addEventListener("click", () => {
+solutionsNav.addEventListener("mouseover", () => {
     solutionsSub.classList.toggle("active")
 
     //remove all active classes from sub-menu-list
@@ -81,7 +97,7 @@ solutionsNav.addEventListener("click", () => {
     })
 })
 
-ratesNav.addEventListener("click", () => {
+ratesNav.addEventListener("mouseover", () => {
     ratesSub.classList.toggle("active")
 
     //remove all active classes from sub-menu-list

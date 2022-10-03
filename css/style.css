@@ -1569,9 +1569,6 @@ ul.slick-dots {
     color: var(--clr-text-100)
   }
 
-  .has-sub-menu {
-    position: relative;
-  }
 
   .sub-menu-list {
     background-color: rgba(255, 255, 255, 0.8);
@@ -1659,6 +1656,10 @@ ul.slick-dots {
     margin-left: 0.5rem;
   }
 
-
+.solutions-sub .sub-menu-wrapper{
+  flex-direction: column;
+  gap: 1.25rem;
+  /* color: var(--clr-text-700); */
+}
 
 }

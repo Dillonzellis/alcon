@@ -55,12 +55,12 @@ body {
 }
 
 /* divi reset */
-.et-l--header ul{
+.et-l--header ul {
   /* padding: 0  !important; */
   line-height: unset !important;
 }
 
-ul{
+ul {
   padding: 0 !important;
 }
 
@@ -1453,6 +1453,8 @@ ul.slick-dots {
     gap: 0.5rem;
 
     text-align: center;
+
+    padding-bottom: 1rem !important;
   }
 
   .nav-link:hover {
@@ -1488,7 +1490,7 @@ ul.slick-dots {
     /* transform: translateX(100%); */
   }
 
-  .sub-menu-wrapper{
+  .sub-menu-wrapper {
     padding: 1rem;
   }
 
@@ -1528,7 +1530,7 @@ ul.slick-dots {
 }
 
 @media(min-width:1200px) {
-  #navbar {
+  .navbar {
     display: grid;
     grid-template-columns: 1fr 2fr;
     /* position: fixed; */
@@ -1539,6 +1541,15 @@ ul.slick-dots {
     padding: 1.5rem 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .inner-nav {
+    background-color: var(--clr-tertiary-600);
+    position: static;
+    width: 100%;
+    transform: unset;
+    max-width: unset;
+    padding: 1rem;
   }
 
   .menu {
@@ -1646,7 +1657,7 @@ ul.slick-dots {
     width: 20ch;
   }
 
-  .sub-menu-list-lower a{
+  .sub-menu-list-lower a {
     color: var(--clr-text-700);
     transition: 0.3s;
   }
@@ -1656,10 +1667,14 @@ ul.slick-dots {
     margin-left: 0.5rem;
   }
 
-.solutions-sub .sub-menu-wrapper{
-  flex-direction: column;
-  gap: 1.25rem;
-  /* color: var(--clr-text-700); */
-}
+  .solutions-sub .sub-menu-wrapper {
+    flex-direction: column;
+    gap: 1.25rem;
+    /* color: var(--clr-text-700); */
+  }
+
+  .login-sub-menu {
+    right: -180px;
+  }
 
 }

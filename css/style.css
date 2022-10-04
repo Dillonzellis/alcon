@@ -96,6 +96,7 @@ ul {
 
   --fs-400: 1rem;
   --fs-425: 1.125rem;
+  --fs-450: 1.25rem;
   --fs-500: 1.5rem;
   --fs-600: 2rem;
   --fs-650: 2.5rem;
@@ -247,6 +248,7 @@ body {
   border: 1px solid #fff;
 }
 
+/* Headings */
 .primary-header {
   color: var(--clr-text-100);
   font-family: var(--ff-accent);
@@ -294,6 +296,12 @@ body {
   color: var(--clr-text-100);
 }
 
+.quarternary-header{
+  font-size: var(--fs-450);
+  font-weight: var(--fw-bold);
+  text-decoration: underline;
+}
+
 /* Nav */
 
 /* Home */
@@ -335,24 +343,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
-    /* margin-bottom: 0 !important; */
   }
 }
 
-
-
 .home-hero-container .btn-wrapper {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
   margin-bottom: 2rem;
 }
 
 .home-hero-container .btn-primary {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
   margin-bottom: 5rem;
 }
 
@@ -378,29 +376,24 @@ body {
 .online-banking-container .id-input {
   background-color: rgba(38, 38, 38, 0.8);
   color: var(--clr-text-100);
-
   border: 1px solid var(--clr-text-100);
   padding: 0.45em 1em;
   width: 100%;
   max-width: 215px;
   border-radius: 3px;
-
   margin-bottom: 1rem !important;
 }
 
 .online-banking-container .id-input:focus {
   color: var(--clr-text-100);
-  /* border: 1.5px solid var(--clr-text-100); */
 }
 
 @media (min-width: 50em) {
   .online-banking-container {
     background-color: rgba(0, 81, 157, 0.6);
-    /* width: 275px; */
     border-radius: 25px;
     padding: 1.5rem;
     color: var(--clr-text-100);
-
     display: flex;
     flex-direction: column;
   }
@@ -424,10 +417,8 @@ body {
   border: 1px solid #000;
   border-radius: 3px;
   margin-inline: auto;
-
   background-color: #fff;
   cursor: pointer;
-
 }
 
 /* Solutions Cards */
@@ -625,6 +616,10 @@ body {
   color: var(--clr-text-100);
 }
 
+.inner-hero-text-wrapper p{
+  font-size: var(--fs-500);
+}
+
 /* .inner-hero-text-wrapper p {
   font-size: var(--fs-500);
 } */
@@ -668,6 +663,11 @@ body {
   color: var(--clr-text-100);
 }
 
+.inner-content-tertiary {
+  background-color: var(--clr-neutral-600);
+  color: var(--clr-text-100);
+}
+
 .inner-content-container p {
   margin-bottom: 1.5rem;
 }
@@ -697,6 +697,11 @@ body {
     z-index: -100;
     opacity: 0.5;
   }
+}
+
+.notice-container{
+  flex-direction: column;
+  --gap:0.5rem
 }
 
 /* Bank */

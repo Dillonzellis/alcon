@@ -1103,17 +1103,16 @@ ul.slick-dots {
 
 
 /* Header  new hover nav*/
-header {
-  background-color: var(--clr-neutral-600);
-
-
-}
-
 .nav-container {
   padding: 0.75rem 1.5rem;
 }
 
 @media(max-width:1199px) {
+
+  .header {
+    background-color: var(--clr-neutral-600);
+  }
+  
 
   .navbar {
     /* margin-top: 0.75rem; */
@@ -1225,10 +1224,16 @@ header {
 }
 
 @media(min-width:1200px) {
-  header {
+  .header {
     position: fixed;
     width: 100%;
     z-index: 9999;
+
+    transition: 0.5s ease;
+  }
+
+  .header-active{
+    background-color: var(--clr-neutral-600);
   }
 
 

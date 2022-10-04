@@ -87,18 +87,18 @@ hamburger.addEventListener("click", () => {
 //   );
 
 
-// bankNav.addEventListener("mouseover", () => {
-//     bankSub.classList.toggle("active")
+bankNav.addEventListener("mouseover", () => {
+    bankSub.classList.toggle("active")
 
-//     //remove all active classes from sub-menu-list
-//     subMenuLists.forEach((list) => {
-//         if (list.classList.contains('bank-sub')) {
-//             // console.log('hit');
-//         } else {
-//             list.classList.remove('active')
-//         }
-//     })
-// })
+    //remove all active classes from sub-menu-list
+    subMenuLists.forEach((list) => {
+        if (list.classList.contains('bank-sub')) {
+            // console.log('hit');
+        } else {
+            list.classList.remove('active')
+        }
+    })
+})
 
 bankNav.addEventListener("click", () => {
     bankSub.classList.toggle("active")
@@ -113,18 +113,18 @@ bankNav.addEventListener("click", () => {
     })
 })
 
-// borrowNav.addEventListener("mouseover", () => {
-//     borrowSub.classList.toggle("active")
+borrowNav.addEventListener("mouseover", () => {
+    borrowSub.classList.toggle("active")
 
-//     //remove all active classes from sub-menu-list
-//     subMenuLists.forEach((list) => {
-//         if (list.classList.contains('borrow-sub')) {
-//             console.log('hit');
-//         } else {
-//             list.classList.remove('active')
-//         }
-//     })
-// })
+    //remove all active classes from sub-menu-list
+    subMenuLists.forEach((list) => {
+        if (list.classList.contains('borrow-sub')) {
+            console.log('hit');
+        } else {
+            list.classList.remove('active')
+        }
+    })
+})
 
 borrowNav.addEventListener("click", () => {
     borrowSub.classList.toggle("active")
@@ -139,18 +139,18 @@ borrowNav.addEventListener("click", () => {
     })
 })
 
-// solutionsNav.addEventListener("mouseover", () => {
-//     solutionsSub.classList.toggle("active")
+solutionsNav.addEventListener("mouseover", () => {
+    solutionsSub.classList.toggle("active")
 
-//     //remove all active classes from sub-menu-list
-//     subMenuLists.forEach((list) => {
-//         if (list.classList.contains('solutions-sub')) {
-//             console.log('hit');
-//         } else {
-//             list.classList.remove('active')
-//         }
-//     })
-// })
+    //remove all active classes from sub-menu-list
+    subMenuLists.forEach((list) => {
+        if (list.classList.contains('solutions-sub')) {
+            console.log('hit');
+        } else {
+            list.classList.remove('active')
+        }
+    })
+})
 
 solutionsNav.addEventListener("click", () => {
     solutionsSub.classList.toggle("active")
@@ -165,18 +165,18 @@ solutionsNav.addEventListener("click", () => {
     })
 })
 
-// ratesNav.addEventListener("mouseover", () => {
-//     ratesSub.classList.toggle("active")
+ratesNav.addEventListener("mouseover", () => {
+    ratesSub.classList.toggle("active")
 
-//     //remove all active classes from sub-menu-list
-//     subMenuLists.forEach((list) => {
-//         if (list.classList.contains('rates-sub')) {
-//             console.log('hit');
-//         } else {
-//             list.classList.remove('active')
-//         }
-//     })
-// })
+    //remove all active classes from sub-menu-list
+    subMenuLists.forEach((list) => {
+        if (list.classList.contains('rates-sub')) {
+            console.log('hit');
+        } else {
+            list.classList.remove('active')
+        }
+    })
+})
 
 ratesNav.addEventListener("click", () => {
 
@@ -192,18 +192,18 @@ ratesNav.addEventListener("click", () => {
     })
 })
 
-// aboutNav.addEventListener("mouseover", () => {
-//     aboutSub.classList.toggle("active")
+aboutNav.addEventListener("mouseover", () => {
+    aboutSub.classList.toggle("active")
 
-//     //remove all active classes from sub-menu-list
-//     subMenuLists.forEach((list) => {
-//         if (list.classList.contains('about-sub')) {
-//             console.log('hit');
-//         } else {
-//             list.classList.remove('active')
-//         }
-//     })
-// })
+    //remove all active classes from sub-menu-list
+    subMenuLists.forEach((list) => {
+        if (list.classList.contains('about-sub')) {
+            console.log('hit');
+        } else {
+            list.classList.remove('active')
+        }
+    })
+})
 
 aboutNav.addEventListener("click", () => {
     aboutSub.classList.toggle("active")

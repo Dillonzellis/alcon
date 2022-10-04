@@ -183,6 +183,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.mt-400 {
+  margin-top: 1rem;
+}
+
 .content-space {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -291,27 +295,6 @@ body {
 }
 
 /* Nav */
-
-
-/* Mobile Nav */
-/* .alcon-row-mobile {
-  padding: 0 !important;
-  margin: 0 !important;
-
-  background-color: var(--clr-neutral-600) !important;
-}
-
-.alcon-col-mobile {
-  padding: 0 !important;
-  margin: 0 !important;
-
-  background-color: var(--clr-neutral-600);
-} */
-
-/* Inner Menu */
-.alcon-inner-menu-desktop {
-  background-color: var(--clr-neutral-600) !important;
-}
 
 /* Home */
 
@@ -1100,6 +1083,33 @@ ul.slick-dots {
 
 }
 
+/* custom modal */
+dialog {
+  padding: 0;
+}
+
+.modal {
+  width: 50ch;
+}
+
+.modal-content {
+  padding: 1rem;
+}
+
+.modal-header {
+  font-size: var(--fs-600);
+}
+
+.modal-btn-wrapper {}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+}
+
+.close-btn>img {
+  height: 50px;
+}
 
 
 /* Header  new hover nav*/
@@ -1112,7 +1122,7 @@ ul.slick-dots {
   .header {
     background-color: var(--clr-neutral-600);
   }
-  
+
 
   .navbar {
     /* margin-top: 0.75rem; */
@@ -1232,7 +1242,7 @@ ul.slick-dots {
     transition: 0.5s ease;
   }
 
-  .header-active{
+  .header-active {
     background-color: var(--clr-neutral-600);
   }
 
@@ -1263,6 +1273,10 @@ ul.slick-dots {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    gap: 2rem;
+  }
+
+  .mb-350 {
     gap: 1rem;
   }
 

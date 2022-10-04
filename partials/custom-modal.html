@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="de-container" style="padding-top: 5rem;">
+
+        <button id="open-modal"><img src="" alt=""></button>
+
+        <a class="open-modal-new | btn btn-primary" id="open-modal-new">
+            Open the dialog differ window
+        </a>
+
+    </main>
+
+    <dialog class="modal" id="fb-modal" aria-hidden="true" aria-labelledby="my-dialog-title"
+        aria-describedby="my-dialog-description">
+        <div class="close-btn" id="fb-close">
+            <img src="https://dev2.growthbydesign.org/wp-content/uploads/2022/09/solution-home.jpg" alt="" srcset="">
+        </div>
+        <div class="modal-content" role="document">
+            <div class="modal-header t-center">Modal Heading</div>
+            <div class="modal-body-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dicta,
+                voluptatibus
+                repellat debitis sed vero adipisci quas, assumenda dolorum dolores velit? Fuga, non. Fugit dolorem
+                deleniti
+                beatae vitae, labore praesentium.</div>
+
+            <button aria-label="Close this dialog window" class="btn btn-modal-cancel"
+                onclick="visitPage()">continue</button>
+
+        </div>
+    </dialog>
+
+    <script src="../js/dialog.js"></script>
+</body>
+
+</html>

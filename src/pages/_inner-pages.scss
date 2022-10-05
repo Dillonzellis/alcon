@@ -54,15 +54,27 @@
     background-color: abs.$clr-accent-400;
     color: abs.$clr-text-100;
   }
+
+  .inner-content-accent-700{
+    background-color: abs.$clr-neutral-600;
+    color: abs.$clr-text-100;
+  }
   
   .inner-content-tertiary {
     background-color: abs.$clr-neutral-600;
     color: abs.$clr-text-100;
   }
-  
+
   .inner-content-container p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
   }
+  
+  @media(min-width:50em){
+    .inner-content-container p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
   
   .inner-content-container ul {
     font-weight: var(--fw-bold);

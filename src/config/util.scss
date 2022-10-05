@@ -5,6 +5,10 @@ body {
     font-family: abs.$ff-primary;
     color: abs.$clr-text-400;
   }
+
+  small{
+    font-size: abs.$fs-300;
+  }
   
   /* Utility */
   
@@ -18,7 +22,8 @@ body {
   
   .de-container {
     --max-width: 1400px;
-    --padding: 1rem;
+    // --padding: 1rem;
+    --padding: 0;
   
     width: min(var(--max-width), 100% - (var(--padding) * 2));
     margin-inline: auto;

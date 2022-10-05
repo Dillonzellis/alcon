@@ -2,5 +2,5 @@
 import './style.scss'
 
 // js
-import './main';
-import './dialog';
+import './js/nav';
+import './js/dialog';

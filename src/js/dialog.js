@@ -1,8 +1,4 @@
 
-
-
-
-
 const fbModal = document.querySelector('#fb-modal')
 const openModal = document.querySelector('#open-modal')
 const closeModal = document.querySelector('#fb-close')

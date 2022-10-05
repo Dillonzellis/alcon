@@ -1,0 +1,158 @@
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+
+.slick-slider {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0 0 0px;
+  }
+  
+  .slick-track:before,
+  .slick-track:after {
+    display: table;
+    content: "";
+  }
+  
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background-color: #b7b7b7;
+    border-radius: 10px;
+  }
+  
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background-color: #b7b7b7;
+    border-radius: 10px;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: colors.$clr-primary-400;
+  }
+  
+  .slick-arrow {
+    position: absolute;
+    top: 40%;
+  
+    border-radius: 100vmax;
+    font-size: 2rem;
+    color: fonts.$clr-text-100;
+    background-color: colors.$clr-neutral-600;
+    border: none;
+  
+    cursor: pointer;
+  }
+  
+  .slick-arrow {
+    display: none !important;
+  }
+  
+  @media (min-width: 100em) {
+    .slick-arrow {
+      display: block !important;
+    }
+  }
+  
+  .slick-arrow,
+  .slick-arrow:hover,
+  .slick-arrow:focus {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    color: transparent;
+    outline: none;
+    background-color: colors.$clr-neutral-600;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 50px;
+  }
+  
+  .slick-prev {
+    left: -100px;
+  }
+  
+  .slick-next {
+    right: -100px;
+  }
+  
+  .slick-arrow:hover:before {
+    opacity: 0.8;
+  }
+  
+  .slick-arrow:before {
+    font-family: ETmodules;
+    color: #000;
+    background: transparent;
+    opacity: 1;
+    font-size: 46px;
+    vertical-align: middle;
+    color: fonts.$clr-text-100;
+    text-align: center;
+  }
+  
+  .slick-prev:before {
+    content: "\34";
+  }
+  
+  .slick-next:before {
+    content: "\35";
+  }
+  
+  .caro-wrapper {
+    position: relative;
+  }
+  
+  .card-deck2 {
+    margin-top: -80px;
+  }
+  
+  ul.slick-dots {
+    position: unset !important;
+  }

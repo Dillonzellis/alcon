@@ -1,0 +1,111 @@
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+
+body {
+    font-family: fonts.$ff-primary;
+    color: fonts.$clr-text-400;
+  }
+  
+  /* Utility */
+  
+  /* .wide-container {
+    --max-width: 1200px;
+    --padding: 0.25rem;
+  
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+  } */
+  
+  .de-container {
+    --max-width: 1400px;
+    --padding: 1rem;
+  
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+  }
+  
+  @media (min-width: 60em) {
+    .de-container {
+      --max-width: 1400px;
+      --padding: 1rem;
+  
+      width: min(var(--max-width), 100% - (var(--padding) * 2));
+      margin-inline: auto;
+    }
+  }
+  
+  @media (min-width: 50em) {
+    .equal-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .t-center {
+    text-align: center;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+  }
+  
+  .j-center {
+    justify-content: center;
+  }
+  
+  .a-center {
+    align-items: center;
+  }
+  
+  .mb-200 {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media(max-width:1200px) {
+    .mb-350 {
+      margin-bottom: 0.75rem;
+    }
+  }
+  
+  
+  .mb-400 {
+    margin-bottom: 1rem;
+  }
+  
+  .mb-500 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .mt-400 {
+    margin-top: 1rem;
+  }
+  
+  .content-space {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .space {
+    height: 1000px;
+  }
+  
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  @media (min-width: 1288px) {
+    .hide-on-mobile {
+      display: unset;
+    }
+  }
+  
+  @media (min-width: 1288px) {
+    .hide-on-desktop {
+      display: none;
+    }
+  }

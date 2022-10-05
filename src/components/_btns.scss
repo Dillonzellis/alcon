@@ -1,0 +1,35 @@
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+
+.btn {
+    padding: 0.6em 1.5em;
+    border-radius: 100vmax;
+    font-size: fonts.$fs-400;
+    font-weight: fonts.$fw-semi-bold;
+    color: fonts.$clr-text-100;
+    border: none;
+  
+    text-transform: capitalize;
+  
+    cursor: pointer;
+    max-width: fit-content;
+  }
+  
+  @media (min-width: 50em) {
+    .btn {
+      /* padding: 0.75em 1.25em; */
+      font-size: fonts.$fs-425 !important;
+    }
+  }
+  
+  .btn-primary {
+    background-color: colors.$clr-primary-400;
+  }
+  
+  .btn-primary:hover {
+    background-color: colors.$clr-primary-300;
+  }
+  
+  .btn-secondary {
+    border: 1px solid #fff;
+  }

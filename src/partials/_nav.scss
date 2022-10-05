@@ -1,5 +1,5 @@
-@use '../abstracts/colors';
-@use '../abstracts/fonts';
+@use '../abstracts' as abs;
+
 
 .nav-container {
     padding: 0.75rem 1.5rem;
@@ -8,7 +8,7 @@
   @media(max-width:1199px) {
   
     .header {
-      background-color: colors.$clr-neutral-600;
+      background-color: abs.$clr-neutral-600;
     }
   
   
@@ -24,7 +24,7 @@
       width: 100%;
   
       transition: 0.3s ease-in-out;
-      background-color: colors.$clr-neutral-600;
+      background-color: abs.$clr-neutral-600;
     }
   
     .navbar.active {
@@ -32,7 +32,7 @@
     }
   
     .navbar a {
-      color: fonts.$clr-text-100;
+      color: abs.$clr-text-100;
       text-transform: capitalize;
     }
   
@@ -81,7 +81,7 @@
       pointer-events: all;
       position: relative;
   
-      background-color: colors.$clr-accent-400;
+      background-color: abs.$clr-accent-400;
       width: 100%;
     }
   
@@ -102,7 +102,7 @@
   
     .sub-menu-1-header:hover::after {
       content: "";
-      background-color: colors.$clr-primary-400;
+      background-color: abs.$clr-primary-400;
       position: absolute;
       top: 24px;
       left: 0.35rem;
@@ -131,7 +131,7 @@
     }
   
     .header-active {
-      background-color: colors.$clr-neutral-600;
+      background-color: abs.$clr-neutral-600;
     }
   
   
@@ -150,7 +150,7 @@
     }
   
     .navbar a {
-      color: fonts.$clr-text-100;
+      color: abs.$clr-text-100;
     }
   
     .mobile-nav {
@@ -238,17 +238,17 @@
     }
   
     .sub-menu-1-wrapper a {
-      color: colors.$clr-accent-400;
-      font-weight: fonts.$fw-bold;
+      color: abs.$clr-accent-400;
+      font-weight: abs.$fw-bold;
     }
   
     .sub-menu-1-header:hover {
-      color: colors.$clr-accent-300;
+      color: abs.$clr-accent-300;
     }
   
     .sub-menu-1-header::after {
       content: "";
-      background-color: colors.$clr-primary-400;
+      background-color: abs.$clr-primary-400;
       position: absolute;
       top: 24px;
       left: 0;
@@ -264,18 +264,18 @@
     }
   
     .sub-menu-2 a {
-      color: fonts.$clr-text-700;
-      font-weight: fonts.$fw-regular;
+      color: abs.$clr-text-700;
+      font-weight: abs.$fw-regular;
       transition: 0.5s;
     }
   
     .sub-menu-2 a:hover {
-      color: colors.$clr-primary-400;
+      color: abs.$clr-primary-400;
       margin-left: 1rem;
   
     }
   
     .pipe-span {
-      color: fonts.$clr-text-100;
+      color: abs.$clr-text-100;
     }
   }

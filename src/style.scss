@@ -1,18 +1,7 @@
-@use './abstracts/colors';
-@use './abstracts/fonts';
+@use './abstracts';
+@use './config';
+@use './components';
+@use './partials';
+@use './pages';
 
-@use './config/reset.scss';
-@use './config/util.scss';
-
-@use './components/btns';
-@use './components/headings';
-@use './components/modals';
-@use './components/slick';
-
-@use './partials/nav';
-@use './partials/footer';
-
-@use './pages/home';
-@use './pages/inner-pages';
-@use './pages/about';
 

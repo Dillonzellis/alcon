@@ -1,12 +1,12 @@
-@use '../abstracts/colors';
-@use '../abstracts/fonts';
+@use '../abstracts' as abs;
+
 
 .btn {
     padding: 0.6em 1.5em;
     border-radius: 100vmax;
-    font-size: fonts.$fs-400;
-    font-weight: fonts.$fw-semi-bold;
-    color: fonts.$clr-text-100;
+    font-size: abs.$fs-400;
+    font-weight: abs.$fw-semi-bold;
+    color: abs.$clr-text-100;
     border: none;
   
     text-transform: capitalize;
@@ -18,16 +18,16 @@
   @media (min-width: 50em) {
     .btn {
       /* padding: 0.75em 1.25em; */
-      font-size: fonts.$fs-425 !important;
+      font-size: abs.$fs-425 !important;
     }
   }
   
   .btn-primary {
-    background-color: colors.$clr-primary-400;
+    background-color: abs.$clr-primary-400;
   }
   
   .btn-primary:hover {
-    background-color: colors.$clr-primary-300;
+    background-color: abs.$clr-primary-300;
   }
   
   .btn-secondary {

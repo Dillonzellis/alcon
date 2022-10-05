@@ -1,10 +1,10 @@
-@use '../abstracts/fonts';
-@use '../abstracts/colors';
+@use '../abstracts' as abs;
+
 
 .modal-window-content {
-    font-size: fonts.$fs-400;
-    font-family: fonts.$ff-primary;
-    color: fonts.$clr-text-700;
+    font-size: abs.$fs-400;
+    font-family: abs.$ff-primary;
+    color: abs.$clr-text-700;
     padding: 1rem 2rem !important;
   
     display: flex;
@@ -13,7 +13,7 @@
   }
   
   .modal-window-content h3 {
-    font-size: fonts.$fs-600;
+    font-size: abs.$fs-600;
   }
   
   .modal-btn-wrapper {
@@ -23,11 +23,11 @@
   }
   
   .btn-modal-cancel {
-    background-color: colors.$clr-primary-400;
+    background-color: abs.$clr-primary-400;
   }
   
   .btn-modal-continue {
-    background-color: colors.$clr-accent-400;
+    background-color: abs.$clr-accent-400;
   
   }
   
@@ -45,7 +45,7 @@
   }
   
   .modal-header {
-    font-size: fonts.$fs-600;
+    font-size: abs.$fs-600;
   }
   
   .close-btn {

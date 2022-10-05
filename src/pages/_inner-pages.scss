@@ -1,5 +1,5 @@
-@use '../abstracts/colors';
-@use '../abstracts/fonts';
+@use '../abstracts' as abs;
+
 
 .inner-hero-container {
     display: flex;
@@ -15,11 +15,17 @@
   }
   
   .inner-hero-text-wrapper {
-    color: fonts.$clr-text-100;
+    color: abs.$clr-text-100;
   }
   
   .inner-hero-text-wrapper p{
-    font-size: fonts.$fs-500;
+    font-size: abs.$fs-425;
+  }
+
+  @media(min-width:50em){
+    .inner-hero-text-wrapper p{
+      font-size: abs.$fs-500;
+    }
   }
 
   
@@ -45,13 +51,13 @@
   }
   
   .inner-content-accent {
-    background-color: colors.$clr-accent-400;
-    color: fonts.$clr-text-100;
+    background-color: abs.$clr-accent-400;
+    color: abs.$clr-text-100;
   }
   
   .inner-content-tertiary {
-    background-color: colors.$clr-neutral-600;
-    color: fonts.$clr-text-100;
+    background-color: abs.$clr-neutral-600;
+    color: abs.$clr-text-100;
   }
   
   .inner-content-container p {

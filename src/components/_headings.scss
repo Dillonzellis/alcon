@@ -1,55 +1,54 @@
-@use '../abstracts/colors';
-@use '../abstracts/fonts';
+@use '../abstracts' as abs;
 
 .primary-header {
-    color: fonts.$clr-text-100;
-    font-family: fonts.$ff-accent;
-    font-size: fonts.$fs-600;
-    font-weight: fonts.$fw-medium;
+    color: abs.$clr-text-100;
+    font-family: abs.$ff-accent;
+    font-size: abs.$fs-600;
+    font-weight: abs.$fw-medium;
   }
   
   @media (min-width: 50em) {
     .primary-header {
-      color: fonts.$clr-text-100;
-      font-family: fonts.$ff-accent;
-      font-size: fonts.$fs-700;
-      font-weight: fonts.$fw-medium;
+      color: abs.$clr-text-100;
+      font-family: abs.$ff-accent;
+      font-size: abs.$fs-700;
+      font-weight: abs.$fw-medium;
     }
   }
   
   .primary-header-700 {
-    font-size: fonts.$fs-650;
+    font-size: abs.$fs-650;
   }
   
   @media (min-width: 50em) {
     .primary-header-700 {
-      font-size: fonts.$fs-900;
+      font-size: abs.$fs-900;
     }
   }
   
   .secondary-header {
-    color: colors.$clr-accent-400;
-    font-size: fonts.$fs-600;
-    font-weight: fonts.$fw-medium;
+    color: abs.$clr-accent-400;
+    font-size: abs.$fs-600;
+    font-weight: abs.$fw-medium;
   
-    font-family: fonts.$ff-accent;
+    font-family: abs.$ff-accent;
   }
   
   .tertiary-header {
-    font-size: fonts.$fs-600;
-    font-weight: fonts.$fw-bold;
+    font-size: abs.$fs-600;
+    font-weight: abs.$fw-bold;
   }
   
   .tertiary-header-primary {
-    color: fonts.$clr-text-700;
+    color: abs.$clr-text-700;
   }
   
   .tertiary-header-accent {
-    color: fonts.$clr-text-100;
+    color: abs.$clr-text-100;
   }
   
   .quarternary-header{
-    font-size: fonts.$fs-450;
-    font-weight: fonts.$fw-bold;
+    font-size: abs.$fs-450;
+    font-weight: abs.$fw-bold;
     text-decoration: underline;
   }

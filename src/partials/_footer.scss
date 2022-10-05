@@ -1,16 +1,16 @@
-@use '../abstracts/colors';
-@use '../abstracts/fonts';
+@use '../abstracts' as abs;
+
 
 footer {
-    background-color: colors.$clr-neutral-600;
+    background-color: abs.$clr-neutral-600;
     /* height: 500px; */
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
   }
   
   .footer-header {
-    color: fonts.$clr-text-100;
-    font-size: fonts.$fs-500;
+    color: abs.$clr-text-100;
+    font-size: abs.$fs-500;
     text-align: center;
   
     padding-top: 1rem;
@@ -50,7 +50,7 @@ footer {
   }
   
   .footer-col {
-    color: fonts.$clr-text-100;
+    color: abs.$clr-text-100;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -61,7 +61,7 @@ footer {
   }
   
   .footer-item>a {
-    color: fonts.$clr-text-100;
+    color: abs.$clr-text-100;
   }
   
   .social-header {
@@ -92,6 +92,6 @@ footer {
   
   .small-wrapper {
     margin-top: 2rem;
-    color: fonts.$clr-text-100;
+    color: abs.$clr-text-100;
     text-align: center;
   }

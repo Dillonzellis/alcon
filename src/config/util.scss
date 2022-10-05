@@ -1,9 +1,9 @@
-@use '../abstracts/colors';
-@use '../abstracts/fonts';
+@use '../abstracts' as abs;
+
 
 body {
-    font-family: fonts.$ff-primary;
-    color: fonts.$clr-text-400;
+    font-family: abs.$ff-primary;
+    color: abs.$clr-text-400;
   }
   
   /* Utility */

@@ -1,4 +1,53 @@
+@use '../abstracts/'as abs;
+
 .about-hero {
-    background-color: steelblue;
+  background-image: url('https://dev2.growthbydesign.org/wp-content/uploads/2022/10/about-hero.jpg');
+  min-height: 100vh;
+}
+
+.about-body {
+  text-align: center;
+  flex-direction: column;
+
+  strong {
+    font-size: abs.$fs-500;
   }
-  
+
+  .btn {
+    margin-inline: auto;
+  }
+}
+
+.contact-us {
+  background-color: abs.$clr-neutral-600;
+  padding: 2rem 0;
+
+  .equal-col {
+    gap: 2rem;
+    .contact-header{
+      position: relative;
+      margin-bottom: 0.5rem;
+      &::after {
+        content: "";
+        left: 0;
+        
+        bottom: 8px;
+        position: absolute;
+        z-index: 999;
+        width: 80px;
+        min-height: 2px;
+        background-color: abs.$clr-primary-400;
+
+      }
+    }
+
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      color: abs.$clr-text-100;
+    }
+  }
+}

@@ -1,10 +1,15 @@
 @use '../abstracts' as abs;
 
 
-footer {
+footer{
+  background-color: abs.$clr-neutral-600;
+  /* height: 500px; */
+  /* padding-top: 1rem; */
+  padding-bottom: 1rem;
+}
+
+.footer {
     background-color: abs.$clr-neutral-600;
-    /* height: 500px; */
-    /* padding-top: 1rem; */
     padding-bottom: 1rem;
   }
   

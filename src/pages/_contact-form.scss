@@ -1,0 +1,18 @@
+@use '../abstracts/' as abs;
+
+.personalized-solutions-contact-page{
+    background-color: abs.$clr-accent-400;
+    .primary-header{
+        position: relative;
+        text-align: center;
+        // &::after{
+        //     content: "";
+        //     position: absolute;
+        //     width: 100px;
+        //     color: abs.$clr-primary-400;
+        //     min-height: 5px;
+        //     bottom: 0;
+        //     z-index: 9999;
+        // }
+    }
+}

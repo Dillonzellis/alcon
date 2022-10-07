@@ -6,6 +6,10 @@
   background-color: abs.$clr-neutral-600;
 }
 
+.static-header{
+  position: relative !important;
+}
+
 .nav-container {
     padding: 0.75rem 1.5rem;
   }
@@ -152,7 +156,14 @@
       grid-template-columns: 1fr 1fr;
       align-items: center;
       width: 100%;
+      .menu{
+        .menu-item{
+          color:  abs.$clr-text-100;
+          cursor: pointer;
+        }
+      }
     }
+
   
     .navbar a {
       color: abs.$clr-text-100;

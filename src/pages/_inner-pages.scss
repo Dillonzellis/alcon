@@ -1,6 +1,25 @@
 @use '../abstracts' as abs;
 
+.inner-content-section{
+  ul{
+    a{
+      color: abs.$clr-accent-400;
+      text-decoration: underline;
+    }
+  }
+}
 
+.inner-content-accent{
+  ul{
+    a{
+      text-decoration: underline;
+      color: abs.$clr-text-100;
+      &:hover{
+        color: abs.$clr-primary-400;
+      }
+    }
+  }
+}
 
 
 .inner-hero-container {

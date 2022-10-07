@@ -1,6 +1,11 @@
 @use '../abstracts' as abs;
 
 
+.inner-header{
+  position: relative;
+  background-color: abs.$clr-neutral-600;
+}
+
 .nav-container {
     padding: 0.75rem 1.5rem;
   }
@@ -254,6 +259,16 @@
       left: 0;
       height: 2px;
       width: 45px;
+    }
+
+    .solutions-sub-menu{
+      a{
+        color: abs.$clr-text-700;
+        font-weight: abs.$fw-regular;
+        &:after{
+          content: unset;
+        }
+      }
     }
   
     .sub-menu-2 {

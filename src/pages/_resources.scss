@@ -1,0 +1,11 @@
+@use '../abstracts' as abs;
+
+.resources-bank{
+    .tertiary-header{
+        font-size: abs.$fs-450;
+        font-weight: abs.$fw-regular;
+    }
+    .sub-menu{
+        margin-inline-start: 2rem;
+    }   
+}

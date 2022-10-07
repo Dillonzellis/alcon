@@ -1,0 +1,7 @@
+@use '../abstracts' as abs;
+
+.overdraft-protection{
+    h1, h2{
+        color: abs.$clr-text-700;
+    }
+}

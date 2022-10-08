@@ -1209,12 +1209,20 @@ footer {
   text-decoration: underline;
 }
 
-.resources-bank .tertiary-header {
+.resources-bank .et_pb_row {
+  padding: 0 !important;
+}
+.resources-bank .et_pb_row .secondary-header {
+  margin-bottom: 0 !important;
+}
+.resources-bank .et_pb_row .tertiary-header {
   font-size: 1.25rem;
   font-weight: 400;
+  margin-bottom: 0 !important;
 }
-.resources-bank .sub-menu {
+.resources-bank .et_pb_row .sub-menu {
   margin-inline-start: 2rem;
+  margin-bottom: 0 !important;
 }
 
 .about-hero {

@@ -1,11 +1,24 @@
-@use '../abstracts' as abs;
+@use '../abstracts'as abs;
 
-.resources-bank{
-    .tertiary-header{
-        font-size: abs.$fs-450;
-        font-weight: abs.$fw-regular;
+.resources-bank {
+    .et_pb_row{
+        padding: 0 !important;
+
+        .secondary-header {
+            margin-bottom: 0 !important;
+        }
+    
+        .tertiary-header {
+            font-size: abs.$fs-450;
+            font-weight: abs.$fw-regular;
+            margin-bottom: 0 !important;
+        }
+    
+        .sub-menu {
+            margin-inline-start: 2rem;
+            margin-bottom: 0 !important;
+        }
     }
-    .sub-menu{
-        margin-inline-start: 2rem;
-    }   
+
+
 }

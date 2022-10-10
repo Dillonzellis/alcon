@@ -149,6 +149,13 @@
         background-color: unset;
       }
     }
+
+    // Static Navs
+    .page-id-801655, .page-id-801653{
+      .header{
+        position: relative !important;
+      }
+    }
   
     .header-active {
       background-color: abs.$clr-neutral-600 !important;

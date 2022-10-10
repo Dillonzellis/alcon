@@ -604,6 +604,9 @@ ul.slick-dots {
   .home .header {
     background-color: unset;
   }
+  .page-id-801655 .header, .page-id-801653 .header {
+    position: relative !important;
+  }
   .header-active {
     background-color: #262626 !important;
   }

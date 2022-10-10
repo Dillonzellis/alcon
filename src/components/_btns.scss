@@ -7,10 +7,12 @@
     font-size: abs.$fs-400;
     font-weight: abs.$fw-semi-bold;
     color: abs.$clr-text-100;
+    a{
+      color: abs.$clr-text-100;
+    }
+   
     border: none;
-  
     text-transform: capitalize;
-  
     cursor: pointer;
     max-width: fit-content;
   }
@@ -24,9 +26,9 @@
   
   .btn-primary {
     background-color: abs.$clr-primary-400;
-    a{
-      color: abs.$clr-text-100;
-    }
+    // a{
+    //   color: abs.$clr-text-100;
+    // }
     &:hover{
       background-color: abs.$clr-primary-300;
     }

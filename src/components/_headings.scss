@@ -6,6 +6,10 @@
     font-size: abs.$fs-600;
     font-weight: abs.$fw-medium;
   }
+
+  // .primary-header > *{
+  //   color: abs.$clr-text-100;
+  // }
   
   @media (min-width: 50em) {
     .primary-header {
@@ -24,6 +28,10 @@
     .primary-header-700 {
       font-size: abs.$fs-900;
     }
+  }
+
+  .header-dark{
+    color: abs.$clr-text-700;
   }
   
   .secondary-header {

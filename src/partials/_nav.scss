@@ -19,10 +19,8 @@
     .header {
       background-color: abs.$clr-neutral-600;
     }
-  
-  
+
     .navbar {
-      /* margin-top: 0.75rem; */
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
@@ -181,16 +179,20 @@
       display: flex;
       flex-direction: row;
       justify-content: end;
-      gap: 2rem;
+      align-items: center;
+      // gap: 2rem;
     }
-  
-    .mb-350 {
-      gap: 1rem;
+
+    .menu-right{
+      display: grid;
+      grid-auto-flow: column;
+      gap: 0;
     }
   
     .menu-item {
       text-transform: uppercase;
       position: relative;
+      padding: 1rem;
     }
   
     .menu-item:hover>.sub-menu-1 {
@@ -307,5 +309,6 @@
   
     .pipe-span {
       color: abs.$clr-text-100;
+      padding: 0;
     }
   }

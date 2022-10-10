@@ -486,7 +486,6 @@ ul.slick-dots {
 }
 
 .inner-header {
-  position: relative;
   background-color: #262626;
 }
 
@@ -596,13 +595,17 @@ ul.slick-dots {
 }
 @media (min-width: 1200px) {
   .header {
+    background-color: #262626;
     position: fixed;
     width: 100%;
     z-index: 9999;
     transition: 0.5s ease;
   }
+  .home .header {
+    background-color: unset;
+  }
   .header-active {
-    background-color: #262626;
+    background-color: #262626 !important;
   }
   .nav-container {
     display: flex;

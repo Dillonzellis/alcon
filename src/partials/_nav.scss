@@ -2,7 +2,7 @@
 
 
 .inner-header{
-  position: relative;
+  // position: relative;
   background-color: abs.$clr-neutral-600;
 }
 
@@ -135,15 +135,23 @@
   
   @media(min-width:1200px) {
     .header {
+      background-color: abs.$clr-neutral-600;
+
       position: fixed;
       width: 100%;
       z-index: 9999;
   
       transition: 0.5s ease;
     }
+
+    .home{
+      .header{
+        background-color: unset;
+      }
+    }
   
     .header-active {
-      background-color: abs.$clr-neutral-600;
+      background-color: abs.$clr-neutral-600 !important;
     }
   
   

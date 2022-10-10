@@ -255,6 +255,9 @@ small {
 .btn-primary {
   background-color: #ec091c;
 }
+.btn-primary a {
+  color: #fff;
+}
 .btn-primary:hover {
   background-color: #ff505f;
 }
@@ -1092,11 +1095,13 @@ footer {
   text-decoration: underline;
 }
 
-.inner-content-accent ul a, .inner-content-accent-700 ul a {
+.inner-content-accent ul a,
+.inner-content-accent-700 ul a {
   text-decoration: underline;
   color: #fff;
 }
-.inner-content-accent ul a:hover, .inner-content-accent-700 ul a:hover {
+.inner-content-accent ul a:hover,
+.inner-content-accent-700 ul a:hover {
   color: #ec091c;
 }
 
@@ -1113,9 +1118,12 @@ footer {
   }
 }
 .inner-hero-text-wrapper {
+  margin-bottom: 0 !important;
+}
+.inner-hero-text-wrapper h1,
+.inner-hero-text-wrapper p {
   color: #fff;
 }
-
 .inner-hero-text-wrapper p {
   font-size: 1.125rem;
 }
@@ -1192,15 +1200,16 @@ footer {
 }
 .notice-container {
   flex-direction: column;
-  --gap:0.5rem;
+  --gap: 0.5rem;
 }
 .notice-container a {
   color: #00519d;
   text-decoration: underline;
 }
 
-.info-page .secondary-header {
-  color: #000;
+.info-page .secondary-header h1, .info-page h2, .info-page h3 {
+  color: #00519d;
+  font-weight: 700;
 }
 
 .visa-debit-card .btn-primary {

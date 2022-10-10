@@ -1,20 +1,22 @@
-@use '../abstracts' as abs;
+@use '../abstracts'as abs;
 
-.inner-content-section{
-  ul{
-    a{
+.inner-content-section {
+  ul {
+    a {
       color: abs.$clr-accent-400;
       text-decoration: underline;
     }
   }
 }
 
-.inner-content-accent, .inner-content-accent-700{
-  ul{
-    a{
+.inner-content-accent,
+.inner-content-accent-700 {
+  ul {
+    a {
       text-decoration: underline;
       color: abs.$clr-text-100;
-      &:hover{
+
+      &:hover {
         color: abs.$clr-primary-400;
       }
     }
@@ -23,110 +25,124 @@
 
 
 .inner-hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+@media (min-width: 60em) {
+  .inner-hero-container {
+    height: 730px;
   }
-  
-  @media (min-width: 60em) {
-    .inner-hero-container {
-      height: 730px;
-    }
-  }
-  
-  .inner-hero-text-wrapper {
+}
+
+.inner-hero-text-wrapper {
+  margin-bottom: 0 !important;
+  // padding-bottom: 0;
+
+  h1,
+  p {
     color: abs.$clr-text-100;
   }
-  
-  .inner-hero-text-wrapper p{
+
+  p {
     font-size: abs.$fs-425;
   }
+}
 
-  @media(min-width:50em){
-    .inner-hero-text-wrapper p{
-      font-size: abs.$fs-500;
-    }
+// .inner-hero-text-wrapper h1, p{
+
+// }
+
+// .inner-hero-text-wrapper p{
+//   font-size: abs.$fs-425;
+// }
+
+@media(min-width:50em) {
+  .inner-hero-text-wrapper p {
+    font-size: abs.$fs-500;
   }
+}
 
-  
+
+.inner-content-wrapper {
+  flex-direction: column;
+}
+
+@media (min-width: 60em) {
   .inner-content-wrapper {
-    flex-direction: column;
+    --gap: 0;
+    flex-direction: row;
   }
-  
-  @media (min-width: 60em) {
-    .inner-content-wrapper {
-      --gap: 0;
-      flex-direction: row;
-    }
-  }
-  
+}
+
+.accent-wrapper {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 60em) {
   .accent-wrapper {
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
-  
-  @media (min-width: 60em) {
-    .accent-wrapper {
-      flex-direction: row;
-    }
-  }
-  
-  .inner-content-accent {
-    background-color: abs.$clr-accent-400;
-    color: abs.$clr-text-100;
-  }
+}
 
-  .inner-content-accent-700{
-    background-color: abs.$clr-neutral-600;
-    color: abs.$clr-text-100;
-  }
-  
-  .inner-content-tertiary {
-    background-color: abs.$clr-neutral-600;
-    color: abs.$clr-text-100;
-  }
+.inner-content-accent {
+  background-color: abs.$clr-accent-400;
+  color: abs.$clr-text-100;
+}
 
+.inner-content-accent-700 {
+  background-color: abs.$clr-neutral-600;
+  color: abs.$clr-text-100;
+}
+
+.inner-content-tertiary {
+  background-color: abs.$clr-neutral-600;
+  color: abs.$clr-text-100;
+}
+
+.inner-content-container p {
+  margin-bottom: 0.75rem;
+}
+
+@media(min-width:50em) {
   .inner-content-container p {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
   }
-  
-  @media(min-width:50em){
-    .inner-content-container p {
-      margin-bottom: 1.5rem;
-    }
-  }
+}
 
-  
-  .inner-content-container ul {
-    font-weight: var(--fw-bold);
-    padding-inline-start: 2.5em !important;
-  }
-  
-  
-  .inner-content-container .btn {
-    margin-top: 1.5rem;
-  }
-  
+
+.inner-content-container ul {
+  font-weight: var(--fw-bold);
+  padding-inline-start: 2.5em !important;
+}
+
+
+.inner-content-container .btn {
+  margin-top: 1.5rem;
+}
+
+.inner-logo-wrapper img {
+  display: none;
+}
+
+@media (min-width: 1500px) {
   .inner-logo-wrapper img {
-    display: none;
+    display: block;
+    position: absolute;
+    top: -486px;
+    z-index: -100;
+    opacity: 0.5;
   }
-  
-  @media (min-width: 1500px) {
-    .inner-logo-wrapper img {
-      display: block;
-      position: absolute;
-      top: -486px;
-      z-index: -100;
-      opacity: 0.5;
-    }
+}
+
+.notice-container {
+  flex-direction: column;
+  --gap: 0.5rem;
+
+  a {
+    color: abs.$clr-accent-400;
+    text-decoration: underline;
   }
-  
-  .notice-container{
-    flex-direction: column;
-    --gap:0.5rem;
-    a{
-      color: abs.$clr-accent-400;
-      text-decoration: underline;
-    }
-  }
-  
+}

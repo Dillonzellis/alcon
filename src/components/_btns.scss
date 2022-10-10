@@ -24,6 +24,9 @@
   
   .btn-primary {
     background-color: abs.$clr-primary-400;
+    a{
+      color: abs.$clr-text-100;
+    }
     &:hover{
       background-color: abs.$clr-primary-300;
     }

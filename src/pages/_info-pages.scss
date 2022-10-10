@@ -1,9 +1,11 @@
 @use '../abstracts' as abs;
 
 .info-page{
-    .secondary-header{
-        color: abs.$clr-text-700;
-    }
+
+  .secondary-header h1, h2, h3 {
+    color: abs.$clr-accent-400;
+    font-weight: abs.$fw-bold;
+  }
 }
 
 .visa-debit-card{

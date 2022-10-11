@@ -1223,15 +1223,57 @@ footer {
   text-decoration: underline;
 }
 
-.info-page .secondary-header h1, .info-page h2, .info-page h3 {
+.info-page .secondary-header {
   color: #00519d;
   font-weight: 700;
+  margin-bottom: 0 !important;
+}
+.info-page .tertiary-header {
+  font-size: 1.5rem;
+  margin-bottom: 0 !important;
+}
+.info-page ul {
+  margin-left: 2rem;
 }
 
 .visa-debit-card .btn-primary {
   background-color: unset;
   color: #00519d;
   text-decoration: underline;
+}
+
+.insurance .secondary-header {
+  margin-bottom: 0 !important;
+}
+.insurance .tertiary-header {
+  font-size: 1.5rem;
+}
+.insurance .et_pb_row {
+  padding-bottom: 0 !important;
+}
+.insurance .et_pb_row .et_pb_module {
+  margin-bottom: 0 !important;
+}
+
+.trustage .secondary-header {
+  font-size: 1.25rem;
+}
+.trustage .tertiary-header {
+  font-size: 1rem;
+}
+.trustage .et_pb_row {
+  padding-top: 0 !important;
+}
+.trustage .et_pb_row .et_pb_module {
+  margin-bottom: 0 !important;
+}
+
+.gap-insurance .secondary-header {
+  font-size: 1.25rem;
+}
+.gap-insurance .tertiary-header {
+  font-size: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .resources-bank .et_pb_row {

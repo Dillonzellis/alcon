@@ -1,0 +1,44 @@
+@use '../abstracts'as abs;
+
+.rates{
+
+}
+
+.rates-table{
+    table, tr, td, th{
+     border: 0.25px solid abs.$clr-neutral-400;
+    }
+
+    table{
+    border-spacing: 0;
+    width: 100%;
+        th{
+            background-color: abs.$clr-accent-400;
+            color: abs.$clr-text-100;
+            font-size: abs.$fs-400;
+
+            padding: 0.5rem 1rem;
+        }
+
+        td{
+            padding: 0.25rem 1rem;
+            &:not(:first-child){
+                text-align: center;
+            }
+        }
+    }
+
+    @media(min-width:30em){
+        table{
+            border-spacing: 0;
+                th{
+                    background-color: abs.$clr-accent-400;
+                    color: abs.$clr-text-100;
+                    font-size: abs.$fs-450;
+                }
+                td{
+                    padding: 0.5rem 1rem;
+                }
+            }
+    }
+ }

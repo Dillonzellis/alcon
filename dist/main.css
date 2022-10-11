@@ -604,7 +604,7 @@ ul.slick-dots {
   .home .header {
     background-color: unset;
   }
-  .page-id-801655 .header, .page-id-801653 .header {
+  .page-id-801655 .header, .page-id-801653 .header, .page-id-801346 .header {
     position: relative !important;
   }
   .header-active {
@@ -1276,6 +1276,9 @@ footer {
   margin-bottom: 1rem !important;
 }
 
+.resources-bank {
+  padding: 2rem 0 !important;
+}
 .resources-bank .et_pb_row {
   padding: 0 !important;
 }
@@ -1341,4 +1344,37 @@ footer {
 .personalized-solutions-contact-page .primary-header {
   position: relative;
   text-align: center;
+}
+
+.rates-table table, .rates-table tr, .rates-table td, .rates-table th {
+  border: 0.25px solid #5c5c5c;
+}
+.rates-table table {
+  border-spacing: 0;
+  width: 100%;
+}
+.rates-table table th {
+  background-color: #00519d;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.rates-table table td {
+  padding: 0.25rem 1rem;
+}
+.rates-table table td:not(:first-child) {
+  text-align: center;
+}
+@media (min-width: 30em) {
+  .rates-table table {
+    border-spacing: 0;
+  }
+  .rates-table table th {
+    background-color: #00519d;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  .rates-table table td {
+    padding: 0.5rem 1rem;
+  }
 }

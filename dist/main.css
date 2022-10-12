@@ -82,6 +82,11 @@ ul {
   max-width: 1400px;
 }
 
+.et_pb_row, .et_pb_module {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #252525;
@@ -1106,6 +1111,15 @@ footer {
   color: #fff;
 }
 
+.inner-content-section, .inner-content-accent {
+  padding: 1.5rem 0 !important;
+}
+
+@media (min-width: 40em) {
+  .inner-content-section, .inner-content-accent {
+    padding: 2rem 0 !important;
+  }
+}
 .inner-content-section ul a {
   color: #00519d;
   text-decoration: underline;
@@ -1126,6 +1140,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  padding: 2rem 0 !important;
+}
+.inner-hero-container .et_pb_row {
+  margin-bottom: auto !important;
 }
 
 @media (min-width: 60em) {
@@ -1183,6 +1201,9 @@ footer {
   color: #fff;
 }
 
+.inner-content-container {
+  margin-bottom: 1rem !important;
+}
 .inner-content-container p {
   margin-bottom: 0.75rem;
 }
@@ -1346,7 +1367,23 @@ footer {
   text-align: center;
 }
 
-.rates-table table, .rates-table tr, .rates-table td, .rates-table th {
+.rates .secondary-header {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.rates-col {
+  --gap:0.5rem;
+  flex-direction: column;
+}
+.rates-col .tertiary-header {
+  font-size: 1.5rem;
+}
+
+.rates-table table,
+.rates-table tr,
+.rates-table td,
+.rates-table th {
   border: 0.25px solid #5c5c5c;
 }
 .rates-table table {
@@ -1358,6 +1395,12 @@ footer {
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 1rem;
+}
+.rates-table table th span {
+  font-size: 1rem;
+}
+.rates-table table tr:nth-child(odd) {
+  background-color: rgb(235, 235, 235);
 }
 .rates-table table td {
   padding: 0.25rem 1rem;
@@ -1377,4 +1420,11 @@ footer {
   .rates-table table td {
     padding: 0.5rem 1rem;
   }
+}
+
+.discounts {
+  padding: 1rem 0 !important;
+}
+.discounts ul {
+  padding: 0 0 23px 1em !important;
 }

@@ -1,44 +1,77 @@
 @use '../abstracts'as abs;
 
-.rates{
-
+.rates {
+    .secondary-header {
+        font-size: abs.$fs-700;
+        margin: 1rem 0;
+    }
 }
 
-.rates-table{
-    table, tr, td, th{
-     border: 0.25px solid abs.$clr-neutral-400;
+.rates-col{
+    --gap:0.5rem;
+    flex-direction: column;
+    .tertiary-header{
+        font-size: abs.$fs-500;
+    }
+}
+
+.rates-table {
+
+    table,
+    tr,
+    td,
+    th {
+        border: 0.25px solid abs.$clr-neutral-400;
     }
 
-    table{
-    border-spacing: 0;
-    width: 100%;
-        th{
+    table {
+        border-spacing: 0;
+        width: 100%;
+
+        th {
             background-color: abs.$clr-accent-400;
             color: abs.$clr-text-100;
             font-size: abs.$fs-400;
 
             padding: 0.5rem 1rem;
+            span{
+                font-size: abs.$fs-400;
+            }
         }
 
-        td{
+        tr:nth-child(odd){
+            background-color: rgb(235, 235, 235);
+        }
+
+        td {
             padding: 0.25rem 1rem;
-            &:not(:first-child){
+
+            &:not(:first-child) {
                 text-align: center;
             }
         }
     }
 
-    @media(min-width:30em){
-        table{
+    @media(min-width:30em) {
+        table {
             border-spacing: 0;
-                th{
-                    background-color: abs.$clr-accent-400;
-                    color: abs.$clr-text-100;
-                    font-size: abs.$fs-450;
-                }
-                td{
-                    padding: 0.5rem 1rem;
-                }
+
+            th {
+                background-color: abs.$clr-accent-400;
+                color: abs.$clr-text-100;
+                font-size: abs.$fs-450;
             }
+
+            td {
+                padding: 0.5rem 1rem;
+            }
+        }
     }
- }
+}
+
+.discounts{
+    padding: 1rem 0 !important;
+    ul{
+        padding: 0 0 23px 1em !important;
+    }
+}

@@ -1,6 +1,20 @@
 @use '../abstracts'as abs;
 
+
+.inner-content-section, .inner-content-accent {
+  padding: 1.5rem 0 !important;
+
+}
+
+@media(min-width:40em){
+  .inner-content-section, .inner-content-accent {
+    padding: 2rem 0 !important;
+  }
+}
+
+
 .inner-content-section {
+  
   ul {
     a {
       color: abs.$clr-accent-400;
@@ -29,6 +43,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  padding: 2rem 0 !important;
+  // margin: auto !important;
+  .et_pb_row{
+    margin-bottom: auto !important;
+  }
+
 }
 
 @media (min-width: 60em) {
@@ -102,9 +122,12 @@
   color: abs.$clr-text-100;
 }
 
-.inner-content-container p {
-  margin-bottom: 0.75rem;
-}
+.inner-content-container{
+  margin-bottom: 1rem !important;
+  p {
+    margin-bottom: 0.75rem;
+  }
+} 
 
 @media(min-width:50em) {
   .inner-content-container p {

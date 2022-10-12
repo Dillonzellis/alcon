@@ -609,7 +609,7 @@ ul.slick-dots {
   .home .header {
     background-color: unset;
   }
-  .page-id-801655 .header, .page-id-801653 .header, .page-id-801346 .header {
+  .page-id-801655 .header, .page-id-801653 .header, .page-id-801346 .header, .page-id-801936 .header {
     position: relative !important;
   }
   .header-active {
@@ -1427,4 +1427,9 @@ footer {
 }
 .discounts ul {
   padding: 0 0 23px 1em !important;
+}
+
+.forms .secondary-header {
+  text-align: center;
+  padding-top: 2rem !important;
 }

@@ -78,10 +78,6 @@ ul {
   margin-bottom: 0;
 }
 
-.page-id-800651 .et_pb_row {
-  max-width: 1400px;
-}
-
 .et_pb_row, .et_pb_module {
   padding: 0 !important;
   margin-bottom: 0 !important;
@@ -245,7 +241,7 @@ small {
 }
 
 .btn {
-  padding: 0.6em 1.5em;
+  padding: 0.6em 1.5em !important;
   border-radius: 100vmax;
   font-size: 1rem;
   font-weight: 600;
@@ -1130,12 +1126,12 @@ footer {
   color: #fff;
 }
 
-.inner-content-section, .inner-content-accent {
+.inner-content-section, .inner-content-accent, .inner-content-accent-700 {
   padding: 1.5rem 0 !important;
 }
 
 @media (min-width: 40em) {
-  .inner-content-section, .inner-content-accent {
+  .inner-content-section, .inner-content-accent, .inner-content-accent-700 {
     padding: 2rem 0 !important;
   }
 }
@@ -1335,33 +1331,22 @@ footer {
   margin-bottom: 0 !important;
 }
 
-.about-hero {
-  background-image: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/10/about-hero.jpg");
-}
-
-.about-body {
-  text-align: center;
+.our-story-section .our-story-col {
+  padding: 2rem 0;
   flex-direction: column;
-}
-.about-body strong {
-  font-size: 1.5rem;
-}
-.about-body .btn {
-  margin-inline: auto;
 }
 
 .contact-us {
   background-color: #262626;
   padding: 2rem 0;
+  color: #fff;
+  padding-bottom: 1rem !important;
 }
-.contact-us .equal-col {
-  gap: 2rem;
-}
-.contact-us .equal-col .contact-header {
+.contact-us .contact-header {
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem !important;
 }
-.contact-us .equal-col .contact-header::after {
+.contact-us .contact-header::after {
   content: "";
   left: 0;
   bottom: 8px;
@@ -1371,11 +1356,64 @@ footer {
   min-height: 2px;
   background-color: #ec091c;
 }
-.contact-us .equal-col img {
-  width: 100%;
-}
-.contact-us .equal-col p {
+.contact-us .hours-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   color: #fff;
+}
+.contact-us .hours-wrapper strong {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+.contact-us .hours-wrapper a {
+  text-decoration: underline;
+}
+.contact-us .hours-wrapper a:hover {
+  color: #ec091c;
+}
+.contact-us .et_pb_map {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40em) {
+  .contact-us .contact-header {
+    margin-bottom: 1.5rem !important;
+  }
+  .contact-us .hours-wrapper {
+    padding-inline-start: 5rem;
+  }
+  .contact-us .et_pb_map {
+    height: 445px;
+  }
+}
+.contact-2 {
+  background-color: #00519d;
+  padding-top: 1rem !important;
+}
+.contact-2 .contact-2-col .tertiary-header {
+  font-size: 1.25rem;
+  text-align: center;
+}
+.contact-2 .contact-2-col .logo-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.contact-2 .about-contact-form-row {
+  background-color: #ec091c;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.contact-2 .about-contact-form-row .tertiary-header {
+  text-align: center;
+  padding: 1.5rem 0 !important;
+}
+.contact-2 .about-contact-form-row .wpcf7-form {
+  width: 360px;
+  margin-inline: auto;
 }
 
 .personalized-solutions-contact-page {

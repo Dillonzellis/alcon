@@ -1,13 +1,13 @@
 @use '../abstracts'as abs;
 
 
-.inner-content-section, .inner-content-accent {
+.inner-content-section, .inner-content-accent, .inner-content-accent-700 {
   padding: 1.5rem 0 !important;
 
 }
 
 @media(min-width:40em){
-  .inner-content-section, .inner-content-accent {
+  .inner-content-section, .inner-content-accent, .inner-content-accent-700 {
     padding: 2rem 0 !important;
   }
 }

@@ -504,7 +504,7 @@ ul.slick-dots {
   .navbar {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
     position: absolute;
     left: -100%;
     z-index: 999;
@@ -551,7 +551,7 @@ ul.slick-dots {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 1rem;
   }
   .menu-item a:hover {
     margin-left: 0.25rem;

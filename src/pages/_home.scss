@@ -52,68 +52,7 @@
     justify-self: end;
   }
   
-  .m-online-banking-wrapper {
-    background-color: abs.$clr-accent-400;
-  }
-  
-  .m-online-banking-wrapper .online-banking-container {
-    text-align: center;
-  }
-  
-  .online-banking-container {
-    background-color: rgba(0, 81, 157, 0.6);
-    border-radius: 25px;
-    padding: 1.5rem;
-    color: abs.$clr-text-100;
-  }
-  
-  .online-banking-container .id-input {
-    background-color: rgba(38, 38, 38, 0.8);
-    color: abs.$clr-text-100;
-    border: 1px solid abs.$clr-text-100;
-    padding: 0.45em 1em;
-    width: 100%;
-    max-width: 215px;
-    border-radius: 3px;
-    margin-bottom: 1rem !important;
-  }
-  
-  .online-banking-container .id-input:focus {
-    color: abs.$clr-text-100;
-  }
-  
-  @media (min-width: 50em) {
-    .online-banking-container {
-      background-color: rgba(0, 81, 157, 0.6);
-      border-radius: 25px;
-      padding: 1.5rem;
-      color: abs.$clr-text-100;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
-  .online-banking-container>* {
-    padding-bottom: 1rem;
-  }
-  
-  .online-banking-container a {
-    color: abs.$clr-text-100;
-  }
-  
-  .online-banking-header {
-    color: abs.$clr-text-100;
-    font-size: abs.$fs-500;
-  }
-  
-  .online-banking-btn {
-    padding: 0.45em 1em;
-    border: 1px solid #000;
-    border-radius: 3px;
-    margin-inline: auto;
-    background-color: #fff;
-    cursor: pointer;
-  }
+ 
   
   /* Solutions Cards */
   .solutions-container {

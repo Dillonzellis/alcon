@@ -486,6 +486,69 @@ ul.slick-dots {
   position: unset !important;
 }
 
+.m-online-banking-wrapper {
+  background-color: #00519d;
+}
+
+.m-online-banking-wrapper .online-banking-container {
+  text-align: center;
+}
+
+.online-banking-container {
+  background-color: rgba(0, 81, 157, 0.6);
+  border-radius: 25px;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.online-banking-container .id-input {
+  background-color: rgba(38, 38, 38, 0.8);
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.45em 1em;
+  width: 100%;
+  max-width: 215px;
+  border-radius: 3px;
+  margin-bottom: 1rem !important;
+}
+
+.online-banking-container .id-input:focus {
+  color: #fff;
+}
+
+@media (min-width: 50em) {
+  .online-banking-container {
+    background-color: rgba(0, 81, 157, 0.6);
+    border-radius: 25px;
+    padding: 1.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.online-banking-container > * {
+  padding-bottom: 1rem;
+}
+
+.online-banking-container a {
+  color: #fff;
+}
+
+.online-banking-header {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.online-banking-btn {
+  padding: 0.45em 1em;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-inline: auto;
+  background-color: #fff;
+  cursor: pointer;
+  color: #000;
+}
+
 .inner-header {
   background-color: #262626;
 }
@@ -702,7 +765,7 @@ ul.slick-dots {
   .sub-menu-1-wrapper {
     display: grid;
     grid-auto-flow: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
     padding: 1rem;
   }
   .col-wrapper {
@@ -712,9 +775,10 @@ ul.slick-dots {
   .sub-menu-1-wrapper a {
     color: #00519d;
     font-weight: 700;
+    transition: 0.5s;
   }
   .sub-menu-1-header:hover {
-    color: #1589f5;
+    color: #ff505f;
   }
   .sub-menu-1-header::after {
     content: "";
@@ -745,16 +809,35 @@ ul.slick-dots {
   }
   .sub-menu-2 a:hover {
     color: #ec091c;
-    margin-left: 1rem;
+  }
+  .forms .sub-menu-1-header {
+    color: #00519d;
+    font-weight: 700;
+  }
+  .forms .sub-menu-1-header:hover {
+    color: #1589f5;
+  }
+  .forms .sub-menu-1-header::after {
+    content: "";
+    background-color: #ec091c;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    height: 2px;
+    width: 45px;
   }
   .forms .sub-menu-2 {
-    opacity: 0;
-    transition: 0.6s;
+    padding-top: 0.5rem !important;
+    margin-inline-start: 0.5rem;
     text-transform: capitalize;
     font-weight: bold;
   }
-  .forms:hover > .sub-menu-2 {
-    opacity: 1;
+  .forms .sub-menu-2 li {
+    position: relative;
+  }
+  .forms .sub-menu-2 li a::before {
+    margin-inline-end: 1rem;
+    content: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/10/Rarr-small.png");
   }
   .pipe-span {
     color: #fff;
@@ -902,68 +985,6 @@ footer {
 
 .home-hero-container .right-col {
   justify-self: end;
-}
-
-.m-online-banking-wrapper {
-  background-color: #00519d;
-}
-
-.m-online-banking-wrapper .online-banking-container {
-  text-align: center;
-}
-
-.online-banking-container {
-  background-color: rgba(0, 81, 157, 0.6);
-  border-radius: 25px;
-  padding: 1.5rem;
-  color: #fff;
-}
-
-.online-banking-container .id-input {
-  background-color: rgba(38, 38, 38, 0.8);
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 0.45em 1em;
-  width: 100%;
-  max-width: 215px;
-  border-radius: 3px;
-  margin-bottom: 1rem !important;
-}
-
-.online-banking-container .id-input:focus {
-  color: #fff;
-}
-
-@media (min-width: 50em) {
-  .online-banking-container {
-    background-color: rgba(0, 81, 157, 0.6);
-    border-radius: 25px;
-    padding: 1.5rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.online-banking-container > * {
-  padding-bottom: 1rem;
-}
-
-.online-banking-container a {
-  color: #fff;
-}
-
-.online-banking-header {
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-.online-banking-btn {
-  padding: 0.45em 1em;
-  border: 1px solid #000;
-  border-radius: 3px;
-  margin-inline: auto;
-  background-color: #fff;
-  cursor: pointer;
 }
 
 /* Solutions Cards */

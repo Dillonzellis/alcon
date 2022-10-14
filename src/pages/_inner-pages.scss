@@ -66,7 +66,7 @@
     color: abs.$clr-text-100;
   }
 
-  p {
+  .sub-header {
     font-size: abs.$fs-425;
   }
 }
@@ -80,7 +80,7 @@
 // }
 
 @media(min-width:50em) {
-  .inner-hero-text-wrapper p {
+  .inner-hero-text-wrapper .sub-header {
     font-size: abs.$fs-500;
   }
 }
@@ -123,17 +123,17 @@
 }
 
 .inner-content-container{
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.5rem !important;
   p {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 } 
 
-@media(min-width:50em) {
-  .inner-content-container p {
-    margin-bottom: 1.5rem;
-  }
-}
+// @media(min-width:50em) {
+//   .inner-content-container p {
+//     margin-bottom: 1.5rem;
+//   }
+// }
 
 
 .inner-content-container ul {

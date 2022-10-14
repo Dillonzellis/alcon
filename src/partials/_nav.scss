@@ -294,6 +294,7 @@
     color: abs.$clr-accent-400;
     font-weight: abs.$fw-bold;
     transition: 0.5s;
+    text-transform: capitalize;
   }
 
   .sub-menu-1-header:hover {
@@ -375,7 +376,9 @@
           &::before{
             // position: absolute;
             margin-inline-end: 1rem;
-            content: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/10/Rarr-small.png");
+            content: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/10/new-arrow.png");
+            // content: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/10/new-sub-icon.png");
+            // content: ">";
           }
         }
       }

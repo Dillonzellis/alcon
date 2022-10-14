@@ -769,6 +769,7 @@ ul.slick-dots {
     color: #00519d;
     font-weight: 700;
     transition: 0.5s;
+    text-transform: capitalize;
   }
   .sub-menu-1-header:hover {
     color: #ff505f;
@@ -830,7 +831,7 @@ ul.slick-dots {
   }
   .forms .sub-menu-2 li a::before {
     margin-inline-end: 1rem;
-    content: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/10/Rarr-small.png");
+    content: url("https://dev2.growthbydesign.org/wp-content/uploads/2022/10/new-arrow.png");
   }
   .pipe-span {
     color: #fff;
@@ -1187,12 +1188,12 @@ footer {
 .inner-hero-text-wrapper p {
   color: #fff;
 }
-.inner-hero-text-wrapper p {
+.inner-hero-text-wrapper .sub-header {
   font-size: 1.125rem;
 }
 
 @media (min-width: 50em) {
-  .inner-hero-text-wrapper p {
+  .inner-hero-text-wrapper .sub-header {
     font-size: 1.5rem;
   }
 }
@@ -1231,17 +1232,12 @@ footer {
 }
 
 .inner-content-container {
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.5rem !important;
 }
 .inner-content-container p {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
-@media (min-width: 50em) {
-  .inner-content-container p {
-    margin-bottom: 1.5rem;
-  }
-}
 .inner-content-container ul {
   font-weight: var(--fw-bold);
   padding-inline-start: 2.5em !important;
@@ -1281,9 +1277,6 @@ footer {
 .info-page .tertiary-header {
   font-size: 1.5rem;
   margin-bottom: 0 !important;
-}
-.info-page ul {
-  margin-left: 2rem;
 }
 
 .visa-debit-card .btn-primary {

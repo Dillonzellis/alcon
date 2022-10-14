@@ -1187,15 +1187,17 @@ footer {
     height: 730px;
   }
 }
-.inner-hero-text-wrapper {
+.inner-hero-container {
   margin-bottom: 0 !important;
 }
-.inner-hero-text-wrapper h1,
-.inner-hero-text-wrapper p {
+.inner-hero-container h1,
+.inner-hero-container p {
   color: #fff;
 }
-.inner-hero-text-wrapper .sub-header {
+
+.sub-header {
   font-size: 1.125rem;
+  color: #fff;
 }
 
 @media (min-width: 50em) {
@@ -1285,12 +1287,6 @@ footer {
   margin-bottom: 0 !important;
 }
 
-.visa-debit-card .btn-primary {
-  background-color: unset;
-  color: #00519d;
-  text-decoration: underline;
-}
-
 .insurance .secondary-header {
   margin-bottom: 0 !important;
 }
@@ -1336,12 +1332,25 @@ footer {
 }
 .resources-bank .et_pb_row .tertiary-header {
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 0 !important;
 }
 .resources-bank .et_pb_row .sub-menu {
   margin-inline-start: 2rem;
   margin-bottom: 0 !important;
+}
+
+.visa-debit-card .visa-btn-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+.visa-debit-card .visa-btn-col img {
+  width: 74px !important;
+}
+.visa-debit-card .visa-btn-col .btn {
+  margin-inline: auto;
 }
 
 .our-story-section .our-story-col {

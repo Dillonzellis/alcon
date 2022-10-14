@@ -57,7 +57,7 @@
   }
 }
 
-.inner-hero-text-wrapper {
+.inner-hero-container {
   margin-bottom: 0 !important;
   // padding-bottom: 0;
 
@@ -66,9 +66,12 @@
     color: abs.$clr-text-100;
   }
 
-  .sub-header {
-    font-size: abs.$fs-425;
-  }
+}
+
+
+.sub-header{
+  font-size: abs.$fs-425;
+  color: abs.$clr-text-100;
 }
 
 // .inner-hero-text-wrapper h1, p{

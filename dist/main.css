@@ -704,7 +704,7 @@ ul.slick-dots {
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    gap: 0.5rem;
+    gap: 2.5rem;
   }
   .menu-right {
     display: grid;
@@ -714,11 +714,12 @@ ul.slick-dots {
   .menu-item {
     text-transform: uppercase;
     position: relative;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
   }
   .sub-menu-1 {
     /* display: none; */
     position: absolute;
+    z-index: 999;
     opacity: 0;
     /* transform: translateY(-200px); */
     pointer-events: none;
@@ -728,10 +729,15 @@ ul.slick-dots {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 3px;
   }
+  .sub-menu-1:hover {
+    opacity: 1;
+    pointer-events: all;
+    transition-delay: 0s;
+  }
   .menu-item:hover > .sub-menu-1 {
     opacity: 1;
     transform: translateY(0%);
-    transform: translateX(-25%);
+    transform: translateX(-40%);
     pointer-events: all;
     transition-delay: 0s;
   }

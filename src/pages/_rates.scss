@@ -1,10 +1,14 @@
 @use '../abstracts'as abs;
 
-.rates {
-    .secondary-header {
-        font-size: abs.$fs-700;
-        margin: 1rem 0;
-    }
+// .rates {
+//     .secondary-header {
+//         font-size: abs.$fs-700;
+//         margin: 1rem 0;
+//     }
+// }
+
+#deposit-rates{
+    margin-top: 2rem;
 }
 
 .rates-col{

@@ -1431,9 +1431,8 @@ footer {
   text-align: center;
 }
 
-.rates .secondary-header {
-  font-size: 3rem;
-  margin: 1rem 0;
+#deposit-rates {
+  margin-top: 2rem;
 }
 
 .rates-col {

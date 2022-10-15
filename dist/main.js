@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _js_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/nav */ \"./src/js/nav.js\");\n/* harmony import */ var _js_nav__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_nav__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/dialog */ \"./src/js/dialog.js\");\n/* harmony import */ var _js_dialog__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_dialog__WEBPACK_IMPORTED_MODULE_2__);\n// styles\r\n\r\n\r\n// js\r\n\r\n\r\n\n\n//# sourceURL=webpack://Alcon/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _js_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/nav */ \"./src/js/nav.js\");\n/* harmony import */ var _js_nav__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_nav__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_mobile_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/mobile-nav */ \"./src/js/mobile-nav.js\");\n/* harmony import */ var _js_mobile_nav__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_mobile_nav__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_dialog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/dialog */ \"./src/js/dialog.js\");\n/* harmony import */ var _js_dialog__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_dialog__WEBPACK_IMPORTED_MODULE_3__);\n// styles\r\n\r\n\r\n// js\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://Alcon/./src/index.js?");
 
 /***/ }),
 
@@ -38,6 +38,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (() => {
 
 eval("\r\n// const fbModal = document.querySelector('#fb-modal')\r\n// const openModal = document.querySelector('#open-modal')\r\n// const closeModal = document.querySelector('#fb-close')\r\n\r\n// openModal.addEventListener('click', ()=>{\r\n//     fbModal.showModal();\r\n// })\r\n\r\n// closeModal.addEventListener('click', ()=>{\r\n//     fbModal.close();\r\n// })\r\n\r\n\r\n// const newModal = document.querySelector('#new-modal')\r\n// const openModalNew = document.querySelector('#open-modal-new')\r\n// const closeModalNew = document.querySelector('#new-close')\r\n\r\n// openModalNew.addEventListener('click', ()=>{\r\n//     newModal.showModal();\r\n// })\r\n\r\n// closeModalNew.addEventListener('click', ()=>{\r\n//     newModal.close();\r\n// })\r\n\r\n// function visitPage(){\r\n//     window.location=\"https://a11y-dialog.netlify.app/installation\"\r\n// }\r\n\r\n\n\n//# sourceURL=webpack://Alcon/./src/js/dialog.js?");
+
+/***/ }),
+
+/***/ "./src/js/mobile-nav.js":
+/*!******************************!*\
+  !*** ./src/js/mobile-nav.js ***!
+  \******************************/
+/***/ (() => {
+
+eval("const bank = document.querySelector('#bank');\r\n\r\nbank.addEventListener('click', ()=>{\r\n    bank.classList.toggle('active')\r\n})\n\n//# sourceURL=webpack://Alcon/./src/js/mobile-nav.js?");
 
 /***/ }),
 

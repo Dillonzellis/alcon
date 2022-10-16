@@ -646,7 +646,14 @@ ul.slick-dots {
   }
   .sub-menu-1-header {
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: #ec091c;
+  }
+  .solutions .sub-menu-1-header, .apply .sub-menu-1-header, .login .sub-menu-1-header {
+    text-decoration: none;
+  }
+  .list-header {
+    text-decoration: underline !important;
+    text-decoration-color: #ec091c !important;
   }
   .sub-menu-1-header:hover::after {
     content: "";

@@ -128,7 +128,18 @@
 
   .sub-menu-1-header {
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: abs.$clr-primary-400;
+  }
+
+  .solutions, .apply, .login{
+    .sub-menu-1-header{
+      text-decoration: none;
+    }
+  }
+
+  .list-header{
+    text-decoration: underline !important;
+    text-decoration-color: abs.$clr-primary-400 !important;
   }
 
   .sub-menu-1-header:hover::after {

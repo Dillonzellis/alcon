@@ -663,7 +663,9 @@ ul.slick-dots {
     text-decoration: underline;
     text-decoration-color: #ec091c;
   }
-  .solutions .sub-menu-1-header, .apply .sub-menu-1-header, .login .sub-menu-1-header {
+  .solutions .sub-menu-1-header,
+.apply .sub-menu-1-header,
+.login .sub-menu-1-header {
     text-decoration: none;
   }
   .list-header {
@@ -712,7 +714,8 @@ ul.slick-dots {
 .page-id-801959 .header,
 .page-id-801962 .header,
 .page-id-801967 .header,
-.page-id-801970 .header {
+.page-id-801970 .header,
+.page-template-static-header .header {
     position: relative !important;
   }
   .header-active {
@@ -1369,8 +1372,15 @@ footer {
   margin-bottom: 1rem !important;
 }
 
+.visa-gift-card-section {
+  padding: 3rem 0 !important;
+}
+.visa-gift-card-section .primary-header {
+  font-weight: 700;
+}
 .visa-gift-card-section .visa-q {
   text-decoration: underline;
+  font-weight: 700;
 }
 .visa-gift-card-section a {
   color: #00519d;

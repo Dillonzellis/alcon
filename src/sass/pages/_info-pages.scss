@@ -67,8 +67,13 @@
 }
 
 .visa-gift-card-section {
+  padding: 3rem 0 !important;
+  .primary-header{
+    font-weight: 700;
+  }
   .visa-q {
     text-decoration: underline;
+    font-weight: abs.$fw-bold;
   }
   a{
     color: abs.$clr-accent-400;

@@ -1,4 +1,4 @@
-@use '/src/sass/abstracts/' as abs;
+@use '/src/sass/abstracts/'as abs;
 
 
 .inner-header {
@@ -131,13 +131,15 @@
     text-decoration-color: abs.$clr-primary-400;
   }
 
-  .solutions, .apply, .login{
-    .sub-menu-1-header{
+  .solutions,
+  .apply,
+  .login {
+    .sub-menu-1-header {
       text-decoration: none;
     }
   }
 
-  .list-header{
+  .list-header {
     text-decoration: underline !important;
     text-decoration-color: abs.$clr-primary-400 !important;
   }
@@ -212,7 +214,8 @@
   .page-id-801959,
   .page-id-801962,
   .page-id-801967,
-  .page-id-801970 {
+  .page-id-801970,
+  .page-template-static-header {
     .header {
       position: relative !important;
     }
@@ -471,12 +474,12 @@
   }
 }
 
-@media(min-width:1400px){
+@media(min-width:1400px) {
   .menu {
     gap: 2.5rem;
   }
 
-  .menu-right{
+  .menu-right {
     gap: unset;
   }
 }

@@ -5,6 +5,7 @@
     font-family: abs.$ff-accent;
     font-size: abs.$fs-600;
     font-weight: abs.$fw-medium;
+    line-height: 1.25;
   }
 
   // .primary-header > *{
@@ -17,6 +18,7 @@
       font-family: abs.$ff-accent;
       font-size: abs.$fs-700;
       font-weight: abs.$fw-medium;
+      line-height: 1.5;
     }
   }
   
@@ -36,10 +38,16 @@
   
   .secondary-header {
     color: abs.$clr-accent-400;
-    font-size: abs.$fs-600;
+    font-size: abs.$fs-500;
     font-weight: abs.$fw-medium;
   
     font-family: abs.$ff-accent;
+  }
+
+  @media(min-width:50em){
+    .secondary-header {
+      font-size: abs.$fs-600;
+    } 
   }
 
   

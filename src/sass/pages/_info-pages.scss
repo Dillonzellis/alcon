@@ -1,15 +1,17 @@
 @use '/src/sass/abstracts/'as abs;
 
-.info-page{
+.info-page {
   .secondary-header {
     color: abs.$clr-accent-400;
     font-weight: abs.$fw-bold;
     margin-bottom: 0 !important;
   }
-  .tertiary-header{
+
+  .tertiary-header {
     font-size: 1.5rem;
     margin-bottom: 0 !important;
   }
+
   // ul{
   //   margin-left: 2rem;
   // }
@@ -17,43 +19,58 @@
 
 
 
-.insurance{
-  .secondary-header{
+.insurance {
+  .secondary-header {
     margin-bottom: 0 !important;
   }
-  .tertiary-header{
+
+  .tertiary-header {
     font-size: 1.5rem;
   }
 
-  .et_pb_row{
+  .et_pb_row {
     padding-bottom: 0 !important;
-    .et_pb_module{
+
+    .et_pb_module {
       margin-bottom: 0 !important;
     }
   }
 }
 
-.trustage{
-  .secondary-header{
+.trustage {
+  .secondary-header {
     font-size: 1.25rem;
   }
-  .tertiary-header{
+
+  .tertiary-header {
     font-size: 1rem;
   }
-  .et_pb_row{
+
+  .et_pb_row {
     padding-top: 0 !important;
-    .et_pb_module{
+
+    .et_pb_module {
       margin-bottom: 0 !important;
     }
   }
 }
 
-.gap-insurance{
-  .secondary-header{
+.gap-insurance {
+  .secondary-header {
     font-size: 1.25rem;
   }
-  .tertiary-header{
+
+  .tertiary-header {
     font-size: 1rem;
     margin-bottom: 1rem !important;
+  }
+}
+
+.visa-gift-card-section {
+  .visa-q {
+    text-decoration: underline;
+  }
+  a{
+    color: abs.$clr-accent-400;
   }
 }

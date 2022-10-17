@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../../dist/main.css" />
+  <link rel="stylesheet" href="/GBD-theme/dist/main.css" />
   <title>Document</title>
 </head>
 <body">
@@ -86,9 +86,6 @@
     </div>
   </div>
 
-  <div class="content-space"></div>
-
-
 
 
 
@@ -120,13 +117,77 @@
   </div>
 
 
+  <div class="holidays-section">
+    <div class="secondary-header">Holidays</div>
+
+    <strong>New Year's Day</strong>
+    <p>January 1, <span class="year"></span></p>
+
+    <strong>Martin Luther King Day</strong>
+    <p>January 17, <span class="year"></span></p>
+
+    <strong>President’s Day</strong>
+    <p>February 21, <span class="year"></span></p>
+
+    <strong>Memorial Day</strong>
+    <p>May 30, <span class="year"></span></p>
+
+    <strong>Independence Day</strong>
+    <p>July 4, <span class="year"></span></p>
+
+    <strong>Labor Day</strong>
+    <p>September 5, <span class="year"></span></p>
+
+    <strong>Thanksgiving</strong>
+    <p>November 23, <span class="year"></span> - Close at noon</p>
+    <p>November 24 - 25, <span class="year"></span> - Closed</p>
+
+    <strong>Christmas/Winter Holiday</strong>
+    <p>December 23, <span class="year"></span> - Close at noon</p>
+    <p>December 26 - 30, <span class="year"></span> - Closed</p>
+
+  </div>
+
+  <div class="member-benefits-section">
+    <div class="secondary-header">Member Referral IncentiveShare the love!</div>
+    <div class="sub-header">If you refer an Alcon co-worker or immediate family member to join the credit union, you can both earn deposit*s into your accounts.</div>
+    <table>
+      <th>
+
+      </th>
+    </table>
+  </div>
+
   <div class="space"></div>
 
+  <div class="cu-rewards-section">
+    <ul>
+      <li><a href="#wow-modal-id-32" target="_blank" rel="noopener noreferrer">Boat, ATV & Powersport Savings </a></li>
+      <li><a href="#wow-modal-id-33" target="_blank" rel="noopener noreferrer">Car Advise</a></li>
+      <li><a href="#wow-modal-id-34" target="_blank" rel="noopener noreferrer">H&R Block & TurboTax</a></li>
+      <li><a href="#wow-modal-id-35" target="_blank" rel="noopener noreferrer">Sam’s Club</a></li>
+      <li><a href="#wow-modal-id-36" target="_blank" rel="noopener noreferrer">SimpliSafe</a></li>
+      <li><a href="#wow-modal-id-37" target="_blank" rel="noopener noreferrer">Rental Kharma</a></li>
+      <li><a href="#wow-modal-id-38" target="_blank" rel="noopener noreferrer">Travel, Entertainment & Other Discounts</a></li>
+      <li><a href="https://dev2.growthbydesign.org/insurance-warranties/#trustage" target="_blank" rel="noopener noreferrer">TruStage Insurance</a></li>
+    </ul>
+  </div>
 
 
 
   </div>
   </div>
+
+  <script>
+const years = document.querySelectorAll('.year');
+
+const yearsArr = [...years];
+
+yearsArr.map((year) =>{
+    year.innerHTML = new Date().getFullYear();
+})
+  </script>
+  <!-- <script src="/GBD-theme/dist/main.js"></script> -->
   </body>
 
 </html>

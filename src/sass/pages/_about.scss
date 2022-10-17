@@ -21,7 +21,7 @@
       content: "";
       left: 0;
 
-      bottom: 8px;
+      bottom: 0;
       position: absolute;
       z-index: 999;
       width: 80px;
@@ -30,6 +30,8 @@
 
     }
   }
+
+
 
   .hours-wrapper {
     display: flex;
@@ -57,6 +59,16 @@
     margin-bottom: 1rem;
   }
 
+}
+
+@media(min-width:50em){
+  .contact-us{
+    .contact-header{
+      &::after{
+        bottom: 8px;
+      }
+    }
+  }
 }
 
 @media(min-width: 40em) {
@@ -128,7 +140,7 @@
   }
 
   .contact-form{
-    padding: 3rem 0 !important;
+    padding: 1rem 0 !important;
     .primary-header{
       // text-align: center;
       color: abs.$clr-text-700;
@@ -139,7 +151,7 @@
         content: "";
         left: 0;
   
-        bottom: 8px;
+        bottom: 0;
         position: absolute;
         z-index: 999;
         width: 80px;
@@ -149,7 +161,53 @@
       }
     }
     .et_pb_contact_form{
-      padding-top: 2rem !important;
+      padding-top: 0.5rem !important;
+    }
+  }
+
+  @media(min-width:50em){
+    .contact-form{
+      padding: 3rem 0 !important;
+      .et_pb_contact_form{
+        padding-top: 2rem !important;
+      }
+      .primary-header::after{
+        bottom: 8px;
+      }
+  }
+}
+
+  .holidays-section{
+    padding-bottom: 3rem !important;
+    .secondary-header{
+      padding-bottom: 0.5rem !important;
+    }
+    strong{
+      font-size: abs.$fs-450;
+    }
+    strong > p{
+      padding-bottom: 1rem !important;
+    }
+  }
+
+  .member-benefits-section{
+    padding-bottom: 3rem !important;
+    .sub-header{
+      color: abs.$clr-text-700;
+    }
+  }
+
+  .cu-rewards-section{
+    padding-bottom: 3rem !important;
+    .sub-header{
+      color: abs.$clr-text-700;
+    }
+    ul{
+      margin-inline-start: 2rem;
+      a{
+        color: abs.$clr-accent-400;
+        text-decoration: underline;
+      }
     }
   }
 }

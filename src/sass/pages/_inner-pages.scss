@@ -68,11 +68,14 @@
 
 }
 
-
-.sub-header{
-  font-size: abs.$fs-425;
-  color: abs.$clr-text-100;
+.inner-hero-container{
+  .sub-header{
+    font-size: abs.$fs-425;
+    color: abs.$clr-text-100;
+  }
 }
+
+
 
 // .inner-hero-text-wrapper h1, p{
 
@@ -83,8 +86,10 @@
 // }
 
 @media(min-width:50em) {
-  .inner-hero-text-wrapper .sub-header {
-    font-size: abs.$fs-500;
+  .inner-hero-container{
+    .sub-header {
+      font-size: abs.$fs-500;
+    }
   }
 }
 

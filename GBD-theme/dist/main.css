@@ -100,6 +100,13 @@ small {
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 } */
+.divi-container {
+  --max-width: 1080px;
+  --padding: 1rem;
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
 .de-container {
   --max-width: 1400px;
   --padding: 1rem;
@@ -1250,13 +1257,13 @@ footer {
   color: #fff;
 }
 
-.sub-header {
+.inner-hero-container .sub-header {
   font-size: 1.125rem;
   color: #fff;
 }
 
 @media (min-width: 50em) {
-  .inner-hero-text-wrapper .sub-header {
+  .inner-hero-container .sub-header {
     font-size: 1.5rem;
   }
 }
@@ -1661,4 +1668,20 @@ footer {
 .forms .secondary-header {
   text-align: center;
   padding-top: 2rem !important;
+}
+
+.calc-index {
+  padding: 3rem 0 !important;
+}
+.calc-index .calc-col ul li {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+.calc-index .calc-col a {
+  color: #00519d;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.calc-index .calc-col a:hover {
+  color: #1589f5;
 }

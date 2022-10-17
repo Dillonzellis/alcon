@@ -1,30 +1,30 @@
 
-// const fbModal = document.querySelector('#fb-modal')
-// const openModal = document.querySelector('#open-modal')
-// const closeModal = document.querySelector('#fb-close')
+const accountModal = document.querySelector('#account-modal')
+const openAccountModal = document.querySelector('#open-account-modal')
+const closeAccountModal = document.querySelector('#account-close')
 
-// openModal.addEventListener('click', ()=>{
-//     fbModal.showModal();
-// })
+openAccountModal.addEventListener('click', ()=>{
+    accountModal.showModal();
+})
 
-// closeModal.addEventListener('click', ()=>{
-//     fbModal.close();
-// })
+closeAccountModal.addEventListener('click', ()=>{
+    accountModal.close();
+})
 
 
-// const newModal = document.querySelector('#new-modal')
-// const openModalNew = document.querySelector('#open-modal-new')
-// const closeModalNew = document.querySelector('#new-close')
+const newModal = document.querySelector('#new-modal')
+const openModalNew = document.querySelector('#open-modal-new')
+const closeModalNew = document.querySelector('#new-close')
 
-// openModalNew.addEventListener('click', ()=>{
-//     newModal.showModal();
-// })
+openModalNew.addEventListener('click', ()=>{
+    newModal.showModal();
+})
 
-// closeModalNew.addEventListener('click', ()=>{
-//     newModal.close();
-// })
+closeModalNew.addEventListener('click', ()=>{
+    newModal.close();
+})
 
-// function visitPage(){
-//     window.location="https://a11y-dialog.netlify.app/installation"
-// }
+function visitPage(){
+    window.location="https://a11y-dialog.netlify.app/installation"
+}
 

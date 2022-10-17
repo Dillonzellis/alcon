@@ -224,8 +224,9 @@
 
 
   .nav-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
     width: 100%;
     max-width: 1860px;
   }
@@ -258,13 +259,12 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    gap: 2.5rem;
   }
 
   .menu-right {
     display: grid;
     grid-auto-flow: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .menu-item {
@@ -282,7 +282,13 @@
     opacity: 0;
     /* transform: translateY(-200px); */
     pointer-events: none;
-    transition: 0.4s 0.3s ease-in;
+
+
+    // opacity hover timer??
+    // transition: 0.4s 0.3s ease-in;
+
+
+    transition: 0.4s 0.2s ease-in;
     // transition: 2s;
     // transition: opacity 2s 0.2s;
 
@@ -462,5 +468,15 @@
   .pipe-span {
     color: abs.$clr-text-100;
     padding: 0;
+  }
+}
+
+@media(min-width:1400px){
+  .menu {
+    gap: 2.5rem;
+  }
+
+  .menu-right{
+    gap: unset;
   }
 }

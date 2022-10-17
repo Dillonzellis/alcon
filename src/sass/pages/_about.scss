@@ -75,39 +75,81 @@
   }
 }
 
-.contact-2 {
-  background-color: abs.$clr-accent-400;
-  padding-top: 1rem !important;
 
-  .contact-2-col {
-    .tertiary-header {
-      font-size: abs.$fs-450;
+
+.page-template-about {
+  .our-story-section{
+    .secondary-header {
       text-align: center;
-    }
-
-    .logo-wrapper {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
+      font-weight: 700;
+      color: abs.$clr-text-700;
     }
   }
 
-  .about-contact-form-row {
-    background-color: abs.$clr-primary-400;
-    color: abs.$clr-text-100;
+  .contact-us{
+    padding: 3rem 0 !important;
+  }
 
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-
-    .tertiary-header {
-      text-align: center;
-      padding: 1.5rem 0 !important;
+  .contact-2 {
+    background-color: abs.$clr-accent-400;
+    padding: 2rem 0 !important;
+  
+    .contact-2-col {
+      .tertiary-header {
+        font-size: abs.$fs-450;
+        text-align: center;
+      }
+  
+      .logo-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem 0;
+      }
     }
+  
+    .about-contact-form-row {
+      background-color: abs.$clr-primary-400;
+      color: abs.$clr-text-100;
+  
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+  
+      .tertiary-header {
+        text-align: center;
+        padding: 1.5rem 0 !important;
+      }
+  
+      .wpcf7-form {
+        width: 360px;
+        margin-inline: auto;
+      }
+    }
+  }
 
-    .wpcf7-form{
-      width: 360px;
-      margin-inline: auto;
+  .contact-form{
+    padding: 3rem 0 !important;
+    .primary-header{
+      // text-align: center;
+      color: abs.$clr-text-700;
+      text-transform: capitalize;
+      
+      position: relative;
+      &::after {
+        content: "";
+        left: 0;
+  
+        bottom: 8px;
+        position: absolute;
+        z-index: 999;
+        width: 80px;
+        min-height: 2px;
+        background-color: abs.$clr-primary-400;
+  
+      }
+    }
+    .et_pb_contact_form{
+      padding-top: 2rem !important;
     }
   }
 }

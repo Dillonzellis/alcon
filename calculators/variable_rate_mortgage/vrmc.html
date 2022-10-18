@@ -1,0 +1,172 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Variable Rate Mortgage Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+    <!-- 
+    <script language="JavaScript" src="style.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script language="JavaScript" src="vrmcv.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="vrmcr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <center>
+                        <h1>
+                          <span class="FontThree">
+                            <strong
+                              >Variable Rate Mortgage Calculator</strong
+                            ></span
+                          >
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Loan Amount: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="LoanAmount"
+                        title="Loan Amount"
+                        onFocus="select();"
+                        onBlur="checkLA(this.form);"
+                        value="250000"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Number of Months: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="NumberOfMonths"
+                        title="Number of Months"
+                        onFocus="select();"
+                        onBlur="checkM(this.form);"
+                        value="360"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Beginning Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write("" + (SR * 100.0) / 100 + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Ending Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write("" + (ER * 100.0) / 100 + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        Incremental Rate of Interest:
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write("" + (IR * 100.0) / 100 + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        Number of Rate Changes over Life of Loan:
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write(NORC);
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <span class="FontFive">
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Payment Only"
+                          value="0"
+                          checked
+                        />
+                        Calculate Payment Only<br />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Payment and Display Amortization Schedule"
+                          value="1"
+                        />
+                        Calculate Payment and Display Amortization Schedule<br />
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

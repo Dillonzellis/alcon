@@ -1,0 +1,263 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Savings Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <!-- <SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script language="JavaScript" src="scv.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="scr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <center>
+                        <h1>
+                          <span class="FontThree">
+                            <strong>Savings Calculator</strong></span
+                          >
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td colspan="2" class="left-col">
+                      <span class="FontFour">
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Ending Balance"
+                          value="0"
+                          checked
+                        />
+                        <strong>Calculate the Ending Balance</strong><br />
+                        (Hint: Enter amounts in the <u>Beginning Balance</u> and
+                        <u>Periodic Contribution</u> boxes.)<br />
+                        <br />
+                        <hr />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Beginning Balance"
+                          value="1"
+                        />
+                        <strong>Calculate the Beginning Balance</strong><br />
+                        (Hint: Enter amounts in the
+                        <u>Periodic Contribution</u> and
+                        <u>Ending Balance</u> boxes.)<br />
+                        <br />
+                        <hr />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Periodic Contribution"
+                          value="2"
+                        />
+                        <strong>Calculate the Periodic Contribution</strong><br />
+                        (Hint: Enter amounts in the <u>Beginning Balance</u> and
+                        <u>Ending Balance</u> boxes.)<br />
+                        <br />
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Beginning Balance: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="BeginningBalance"
+                      
+                        title="Beginning Balance"
+                        onFocus="select();"
+                        onBlur="checkBB(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InterestRate"
+                      
+                        title="Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="8"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Periodic Contribution: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="PeriodicContribution"
+                      
+                        title="Periodic Contribution"
+                        onFocus="select();"
+                        onBlur="checkPC(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Number of Periods: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="NumberOfPeriods"
+                      
+                        title="Number of Periods"
+                        onFocus="select();"
+                        onBlur="checkNP(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Ending Balance: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="EndingBalance"
+                      
+                        title="Ending Balance"
+                        onFocus="select();"
+                        onBlur="checkEB(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="left-col">
+                      <span class="FontFour">
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Weekly Basis"
+                          value="0"
+                        />
+                        Compound on a Weekly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Monthly Basis"
+                          value="1"
+                          checked
+                        />
+                        Compound on a Monthly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Quarterly Basis"
+                          value="2"
+                        />
+                        Compound on a Quarterly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Annual Basis"
+                          value="3"
+                        />
+                        Compound on an Annual Basis<br />
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <span class="FontFive">
+                        <strong>
+                          <input
+                            name="today"
+                            type="checkbox"
+                            title="Show Ending Balance"
+                            value="1"
+                            checked
+                          />
+                          Show Ending Balance in Current Dollars</strong
+                        >
+                        (Hint: Check this box to show the ending balance in
+                        today's dollars.)
+                        <hr />
+                        <strong>
+                          <input
+                            name="inflation"
+                            type="checkbox"
+                            title="Adjust for Inflation"
+                            value="0"
+                          />
+                          Adjust for Inflation</strong
+                        >
+                        (Hint: Check this box to inflate the periodic
+                        contributions.)
+                    
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Inflation Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InflationRate"
+                      
+                        title="Inflation Rate"
+                        onFocus="select();"
+                        onBlur="checkInf(this.form);"
+                        value="3"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <script Langugage="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

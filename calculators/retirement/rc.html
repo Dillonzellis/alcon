@@ -1,0 +1,273 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Retirement Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <!-- <SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script language="JavaScript" src="rcv.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="rcr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr class="main-header">
+                    <td colspan="2">
+                      <center>
+                        <h1>
+        
+                          <span class="FontThree">
+                            <strong>Retirement Calculator</strong></span
+                          >
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td colspan="2" class="left-col">
+                      <span class="FontFour">
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Annual Income After Retirement"
+                          value="0"
+                          checked
+                        />
+                        <strong
+                          >Calculate the Annual Income You Will Receive After
+                          Retirement</strong
+                        ><br />
+                        (Hint: Enter amounts in the <u>Beginning Balance</u> and
+                        the <u>Annual Contribution</u> boxes, as well as the age
+                        parameters.)<br />
+                        <br />
+                        <hr />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Annual Contribution"
+                          value="1"
+                        />
+                        <strong
+                          >Calculate the Annual Contribution You Must Make Before
+                          Retirement</strong
+                        ><br />
+                        (Hint: Enter amounts in the <u>Beginning Balance</u> and
+                        the <u>Annual Income</u> boxes,<br />
+                        as well as the age parameters.)<br />
+                        <br />
+                        <hr />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Beginning Balance Required"
+                          value="2"
+                        />
+                        <strong
+                          >Calculate the Beginning Balance Required in Your
+                          Retirement Account</strong
+                        ><br />
+                        (Hint: Enter amounts in the <u>Annual Contribution</u> and
+                        the <u>Annual Income</u> boxes,<br />
+                        as well as the age parameters.)<br />
+                        <br />
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Beginning Balance: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="Principal"
+                        
+                        title="Beginning Balance"
+                        onFocus="select();"
+                        onBlur="checkPR(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InterestRate"
+                        
+                        title="Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="8"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Annual Contribution: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="AnnualContribution"
+                        
+                        title="Annual Contribution"
+                        onFocus="select();"
+                        onBlur="checkAC(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Annual Income: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="AnnualIncome"
+                        
+                        title="Annual Income"
+                        onFocus="select();"
+                        onBlur="checkAI(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Present Age: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="PresentAge"
+                        
+                        title="Present Age"
+                        onFocus="select();"
+                        onBlur="checkPresAge(this.form);"
+                        value="35"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Retirement Age: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="RetirementAge"
+                        
+                        title="Retirement Age"
+                        onFocus="select();"
+                        onBlur="checkRetAge(this.form);"
+                        value="65"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        Age At Which Retirement Withdrawals Will End:
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="WithdrawalAge"
+                        
+                        title="Withdrawals Will End"
+                        onFocus="select();"
+                        onBlur="checkWithAge(this.form);"
+                        value="85"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <span class="FontFive">
+                        <strong>
+                          <input
+                            name="today"
+                            type="checkbox"
+                            title="Show Annual Income"
+                            value="1"
+                            checked
+                          />
+                          Show Annual Income in Current Dollars</strong
+                        ><br />
+                        (Hint: Check this box to show the annual income amount in
+                        today's dollars.)<br />
+                  
+                        <hr />
+                        <strong>
+                          <input
+                            name="inflation"
+                            type="checkbox"
+                            title="Adjust for Inflation"
+                            value="0"
+                          />
+                          Adjust for Inflation</strong
+                        ><br />
+                        (Hint: Check this box to account for the effects of
+                        inflation over time.)<br />
+                 
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Inflation Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InflationRate"
+                
+                        title="Inflation Rate"
+                        onFocus="select();"
+                        onBlur="checkInf(this.form);"
+                        value="3"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

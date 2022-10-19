@@ -1,0 +1,17 @@
+@use '/src/sass/abstracts/'as abs;
+
+.page-template-home{
+    .rates-container{
+        padding: 2rem 0 !important;
+        .primary-header{
+            padding-bottom: 1rem 0 !important;
+        }
+        .loan-type{
+            font-size: abs.$fs-500;
+            font-weight: abs.$fw-medium;
+        }
+        .btn-secondary{
+            margin-inline: auto;
+        }
+    }
+}

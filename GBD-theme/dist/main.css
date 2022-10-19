@@ -721,7 +721,7 @@ ul.slick-dots {
   .home .header {
     background-color: unset;
   }
-  .page-template-static-header .header {
+  .page-template-static-header .header, .page-template-home .header {
     position: relative !important;
   }
   .header-active {
@@ -1203,6 +1203,20 @@ footer {
 
 .right-ar svg {
   color: #fff;
+}
+
+.page-template-home .rates-container {
+  padding: 2rem 0 !important;
+}
+.page-template-home .rates-container .primary-header {
+  padding-bottom: 1rem 0 !important;
+}
+.page-template-home .rates-container .loan-type {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.page-template-home .rates-container .btn-secondary {
+  margin-inline: auto;
 }
 
 .inner-content-section, .inner-content-accent, .inner-content-accent-700 {

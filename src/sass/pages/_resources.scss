@@ -21,6 +21,16 @@
             margin-bottom: 0 !important;
             list-style-type: circle;
         }
+
+        ul {
+            a {
+                color: abs.$clr-accent-400;
+
+                &:hover {
+                    color: abs.$clr-accent-300;
+                }
+            }
+        }
     }
 }
 
@@ -30,16 +40,18 @@
 
 .visa-debit-card {
 
-    .visa-btn-col{
+    .visa-btn-col {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding: 1.5rem 0;
+
         img {
             width: 74px !important;
-           
+
         }
-        .btn{
+
+        .btn {
             margin-inline: auto;
         }
 
@@ -47,15 +59,15 @@
 
 }
 
-.loan-payment{
-    .loan-payment-col{
+.loan-payment {
+    .loan-payment-col {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
 }
 
-#trustage{
+#trustage {
     a {
         color: abs.$clr-accent-400;
     }

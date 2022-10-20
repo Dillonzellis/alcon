@@ -37,6 +37,13 @@
   }
 }
 
+.inner-content-section, .inner-content-accent, .inner-content-accent-700{
+  img{
+    border-radius: 20px;
+    width: 510px;
+  }
+}
+
 
 .inner-hero-container {
   display: flex;
@@ -50,6 +57,12 @@
   }
 
 }
+
+.inner-hero-container{
+  background-blend-mode: darken;
+  background-color: rgba(0,0,0,0.3);
+}
+
 
 @media (min-width: 60em) {
   .inner-hero-container {

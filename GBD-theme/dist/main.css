@@ -1246,6 +1246,11 @@ footer {
   color: #ec091c;
 }
 
+.inner-content-section img, .inner-content-accent img, .inner-content-accent-700 img {
+  border-radius: 20px;
+  width: 510px;
+}
+
 .inner-hero-container {
   display: flex;
   flex-direction: column;
@@ -1255,6 +1260,11 @@ footer {
 }
 .inner-hero-container .et_pb_row {
   margin-bottom: auto !important;
+}
+
+.inner-hero-container {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 60em) {

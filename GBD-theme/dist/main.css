@@ -1728,12 +1728,12 @@ footer {
   padding: 3rem 0 !important;
 }
 .calc-index .calc-col ul li {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   cursor: pointer;
 }
 .calc-index .calc-col a {
   color: #00519d;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 .calc-index .calc-col a:hover {

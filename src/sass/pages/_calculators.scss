@@ -9,13 +9,13 @@
         // gap: 1rem;
         ul{
             li{
-                padding-bottom: 1rem;
+                padding-bottom: 0.5rem;
                 cursor: pointer;
             }
         }
         a{
             color: abs.$clr-accent-400;
-            font-size: abs.$fs-450;
+            font-size: abs.$fs-425;
             font-weight: abs.$fw-semi-bold;
             &:hover{
                 color: abs.$clr-accent-300;

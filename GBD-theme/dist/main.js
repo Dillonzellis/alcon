@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*******************************/
 /***/ (() => {
 
-eval("const years = document.querySelectorAll('.year');\r\n\r\nconst yearsArr = [...years];\r\n\r\nyearsArr.map((year) =>{\r\n    // innerHTML = new Date().getFullYear();\r\n    document.write(new Date().getFullYear());\r\n})\n\n//# sourceURL=webpack://Alcon/./src/js/currentYear.js?");
+eval("const years = document.querySelectorAll('year');\r\n\r\nconst yearsArr = [...years];\r\n\r\nyearsArr.map((year) =>{\r\n    innerHTML = new Date().getFullYear();\r\n    // document.write(new Date().getFullYear());\r\n})\n\n//# sourceURL=webpack://Alcon/./src/js/currentYear.js?");
 
 /***/ }),
 

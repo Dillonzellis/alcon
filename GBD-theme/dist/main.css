@@ -248,16 +248,19 @@ small {
   font-family: "Roboto", sans-serif;
 }
 
+.tertiary-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 @media (min-width: 50em) {
   .secondary-header {
     font-size: 2rem;
   }
+  .tertiary-header {
+    font-size: 2rem;
+  }
 }
-.tertiary-header {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
 .tertiary-header-primary {
   color: #000;
 }
@@ -721,7 +724,7 @@ ul.slick-dots {
   .home .header {
     background-color: unset;
   }
-  .page-template-static-header .header, .page-template-home .header {
+  .page-template-static-header .header {
     position: relative !important;
   }
   .header-active {
@@ -1349,16 +1352,28 @@ footer {
   text-decoration: underline;
 }
 
+.id-fix {
+  position: absolute;
+  top: -120px;
+  visibility: hidden;
+}
+
 .info-page .secondary-header {
   color: #00519d;
   font-weight: 700;
   margin-bottom: 0 !important;
 }
 .info-page .tertiary-header {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 0 !important;
 }
 
+@media (min-width: 50em) {
+  .info-page .tertiary-header {
+    font-size: 1.5rem;
+    margin-bottom: 0 !important;
+  }
+}
 .insurance .secondary-header {
   margin-bottom: 0 !important;
 }
@@ -1401,6 +1416,18 @@ footer {
 }
 .visa-gift-card-section ul {
   margin-inline-start: 2rem;
+}
+
+.complaint {
+  padding: 3rem 0 !important;
+}
+.complaint .complaint-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.complaint .complaint-col a {
+  color: #00519d;
 }
 
 .resources-bank {

@@ -8,7 +8,7 @@
   }
 
   .tertiary-header {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 0 !important;
   }
 
@@ -19,6 +19,14 @@
   // }
 }
 
+@media(min-width:50em){
+  .info-page {
+    .tertiary-header {
+      font-size: 1.5rem;
+      margin-bottom: 0 !important;
+    }
+  }
+}
 
 
 .insurance {
@@ -84,5 +92,18 @@
   //   text-decoration: underline;
   //   font-weight: abs.$fw-bold;
   // }
+
+}
+
+.complaint{
+padding: 3rem 0 !important;
+  .complaint-col{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    a{
+      color: abs.$clr-accent-400;
+    }
+  }
 
 }

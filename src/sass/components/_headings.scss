@@ -44,17 +44,23 @@
     font-family: abs.$ff-accent;
   }
 
+  .tertiary-header {
+    font-size: abs.$fs-450;
+    font-weight: abs.$fw-bold;
+  }
+
   @media(min-width:50em){
     .secondary-header {
       font-size: abs.$fs-600;
     } 
+
+    .tertiary-header {
+      font-size: abs.$fs-600;
+    }
   }
 
   
-  .tertiary-header {
-    font-size: abs.$fs-600;
-    font-weight: abs.$fw-bold;
-  }
+
 
   .tertiary-header-primary {
     color: abs.$clr-text-700;

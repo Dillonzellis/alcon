@@ -1,3 +1,50 @@
-.page-template-calculators{
+.page-template-calculators {}
+
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  table {
+    font-family: "Montserrat", sans-serif;
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    td {
+      font-size: 16px;
+    }
+
+    input {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+    }
+    .main-header {
+      background-color: #003ca6;
+      color: #fff;
+    }
+
+    .left-col {
+      background-color: #eeeeee;
+      span{
+        font-weight: 600;
+      }
+    }
     
+    .footer-inputs {
+      padding: 15px 10px;
+      background-color: #003ca6;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 20px;
+    }
+  }
+}
+
+.amort-table td:not(:first-child) {
+  background-color: #eee;
 }

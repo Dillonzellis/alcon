@@ -1,3 +1,5 @@
+@use '/src/sass/abstracts/' as abs;
+
 .page-template-calculators {}
 
 
@@ -7,7 +9,7 @@
   align-items: center;
 
   table {
-    font-family: "Montserrat", sans-serif;
+    font-family: abs.$ff-primary;
 
     h1,
     h2 {
@@ -19,12 +21,12 @@
     }
 
     input {
-      font-family: "Montserrat", sans-serif;
+      font-family: abs.$ff-primary;
       font-size: 16px;
     }
     .main-header {
-      background-color: #003ca6;
-      color: #fff;
+      background-color: abs.$clr-accent-400;
+      color: abs.$clr-text-100;
     }
 
     .left-col {
@@ -36,8 +38,8 @@
     
     .footer-inputs {
       padding: 15px 10px;
-      background-color: #003ca6;
-      color: #fff;
+      background-color: abs.$clr-accent-400;
+      color: abs.$clr-text-100;
       border: none;
       border-radius: 3px;
       font-size: 20px;

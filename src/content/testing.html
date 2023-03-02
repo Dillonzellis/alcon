@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .slider {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .slider-container {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .slider-card {
+        flex: 0 0 calc(100% / 3);
+        padding: 1rem;
+        text-align: center;
+        background-color: #eee;
+        border: 1px solid #ccc;
+      }
+
+      .slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      .prev-btn {
+        left: 0;
+      }
+
+      .next-btn {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slider-container">
+        <div class="slider-card current-slide">Card 1</div>
+        <div class="slider-card">Card 2</div>
+        <div class="slider-card">Card 3</div>
+        <div class="slider-card">Card 4</div>
+        <div class="slider-card">Card 5</div>
+        <div class="slider-card">Card 6</div>
+      </div>
+      <button class="slider-btn prev-btn">&lt;</button>
+      <button class="slider-btn next-btn">&gt;</button>
+    </div>
+    <script>
+      const carousel = document.querySelector(".slider");
+      const carouselTrack = document.querySelector(
+        ".slider-container"
+      );
+      const slides = Array.from(carouselTrack.children);
+      const prevButton = document.querySelector(".prev-btn");
+      const nextButton = document.querySelector(".next-btn");
+      const slideWidth = slides[0].getBoundingClientRect().width;
+
+      // Arrange the slides next to each other horizontally
+      const setSlidePosition = (slide, index) => {
+        slide.style.left = slideWidth * index + "px";
+      };
+      slides.forEach(setSlidePosition);
+
+      // Move the carousel to the target slide
+      const moveToSlide = (
+        carouselTrack,
+        currentSlide,
+        targetSlide
+      ) => {
+        carouselTrack.style.transform =
+          "translateX(-" + targetSlide.style.left + ")";
+        currentSlide.classList.remove("current-slide");
+        targetSlide.classList.add("current-slide");
+      };
+
+      // Hide or show the arrows based on the current slide position
+      const hideShowArrows = (
+        slides,
+        prevButton,
+        nextButton,
+        targetIndex
+      ) => {
+        if (targetIndex === 0) {
+          prevButton.classList.add("is-hidden");
+          nextButton.classList.remove("is-hidden");
+        } else if (targetIndex === slides.length - 1) {
+          prevButton.classList.remove("is-hidden");
+          nextButton.classList.add("is-hidden");
+        } else {
+          prevButton.classList.remove("is-hidden");
+          nextButton.classList.remove("is-hidden");
+        }
+      };
+
+      // Click event handler for the previous button
+      prevButton.addEventListener("click", () => {
+        const currentSlide =
+          carouselTrack.querySelector(".current-slide");
+        const prevSlide = currentSlide.previousElementSibling;
+        const prevIndex = slides.findIndex(
+          (slide) => slide === prevSlide
+        );
+
+        moveToSlide(carouselTrack, currentSlide, prevSlide);
+        hideShowArrows(slides, prevButton, nextButton, prevIndex);
+      });
+
+      // Click event handler for the next button
+      nextButton.addEventListener("click", () => {
+        const currentSlide =
+          carouselTrack.querySelector(".current-slide");
+        const nextSlide = currentSlide.nextElementSibling;
+        const nextIndex = slides.findIndex(
+          (slide) => slide === nextSlide
+        );
+
+        moveToSlide(carouselTrack, currentSlide, nextSlide);
+        hideShowArrows(slides, prevButton, nextButton, nextIndex);
+      });
+    </script>
+  </body>
+</html>
